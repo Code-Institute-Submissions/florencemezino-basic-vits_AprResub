@@ -1,24 +1,27 @@
-[Ocuure](link)
+[Basic Vits](link)
 
 [View the live project here](link)
 
-![Ocuure](testing/responsivemockup.png)
+![Basic Vits](testing/responsivemockup.png)
 
 
 # User Experience (UX)
 
+
 ## Project Goals
 
-`Ocuure` is a e-commerce shop which allows everyone who care for their health to buy vitamins, supplements and other merchandises products. It has been created to help everyone to take care of their body and mind according to their meeds. 
+`Basic Vits` is a e-commerce shop which allows everyone who care for their health to buy vitamins, supplements and other merchandises products. It has been created to help everyone to take care of their body and mind according to their needs by getting vitamins and supplements on a regular basis.
+
 
 ## End User Profile and Goals
 
-End Users of `Ocuure` are :
-- Shopper : people who care for their health/well being and want to include regular vitamins and supplement intake in their daily life. 
+End Users of `Basic Vits` are :
+- Site user / Shopper: people who care for their health/well being and want to include regular vitamins and supplement intake as part of their routine.
 They are mostly between 25 - 50 years old and have an active life. They are eager to learn more about how they can improve their health via nutrition.
-- Site User : `Ocuure` company staff who work with maintaining the product database
+Among 
+- Site User / Company admin : `Basic Vits` company staff who work with maintaining the product database and make sure that there are enough product online to be sold.
 
-### `Ocuure` shopper 
+### `Basic Vits` shopper 
 
 a. identity and behaviours
 
@@ -29,97 +32,98 @@ a. identity and behaviours
 b. expectations
 - End users wish to make improvments on their health by adding vitamins and supplements to their nutrition routine.
 - End users wish to take ownership of their own health by easily access to a wide range of vitamins and supplements.
-- End users wish to see concrete improvments after a cure of certain vitamins and supplements
+- End users wish to see concrete improvments after a cure/treat of certain vitamins and supplements
 
 c. restraints
-- End users lack of information about which vitamins and supplement to take reagrding their health and end up taking vitamins and supplement randomly
-- End users don't take the time to shop for vitamins and supplemets in physical shops
+- End users lack of information about which vitamins and supplement to take reagrding their health and end up taking vitamins and supplement randomly. 
+- End users lack of information about when to take vitamins and supplements( morning noon or evening)
+- End users lack of information about how to take vitamins and supplements( i.e: which vitamins should be mix together, which kind of food to eat with the vitamins to enhance the benefits, which vitamins format is the most adequat)
+- End users don't take the time to shop for vitamins and supplements in physical shops. It does not come automatically on the groceries shopping.
 
 d. ultimate goal
-- End users want to have access to a personalized vitamins and supplements recommendations to buy regarding to their need
+- End users want to have access to a personalized vitamins and supplements recommendations to buy regarding to their needs amd receive it on a regular basis.
 
-### `Ocuure` site user / admin
+### `Basic Vits` site user / admin
 
 a. identity and behaviours
-- End users who works on adding new product
-- End users who works on updating / improving existing product
-- End users who works on deleting product which are not available anymore
+- End users who work on adding new product to the platform
+- End users who work on updating / improving existing product (i.e : marketing description)
+- End users who work on deleting product which are not available anymore ( i.e : end contract with a provider)
 
 b. expectations
-- End users expect an easy way to maintain the `Ocuure` product database up to date
+- End users expect an easy way to maintain the `Basic Vits` product database up to date.
 
 c. restraints
-- End users don't want to spend time accessing the django admin to add products but need an efficient interface to update the product database.
+- End users don't want to spend time accessing the django admin to add products but need an efficient interface to add/ update the product database. In that way they can see immediately how the customer will interact with the product online.
 
 d. ultimate goal
-- Make available a wide range of products to the shopper to make sure each of them ends up with a tailored list of products that satify their needs.
+- End users want to make available a wide range of products to the shopper to make sure, client ends up with a tailored list of products/subcription that satisfy their needs on a certain period.
 
 ## Business and developer goals
 
-- `Ocuure` company want to make vitamins and supplements accessible to anyone who wish to improve their health continuously. It is a flexible monthly subscription service. End Users can modify, postpone or cancel their next order at any time in their account. Only the merch product category is a one time buy.
-- `Ocuure` company business model is to resell vitamins and supplements as a monthly subscription.
+- `Basic Vits` inc. company want to make vitamins and supplements accessible to anyone who wish to improve their health continuously. It is a flexible monthly subscription service. End Users can modify, postpone or cancel their next order at any time in their account. Only the merch product category is a one time buy.
+- `Basic Vits` inc. company business model is to resell vitamins and supplements to end user as a monthly personalized subscription.
 
-- As a developer : profesionnal experience in developping an ecommerce website using Python+Django
-- As a developer : a functionnal full stack website to add in the developer's portfolio
+- As a developer, I want to gain profesionnal experience in developping an ecommerce website using Python+Django
+- As a developer, I want to add a functionnal full stack e-commerce website to my developer's portfolio
 
 ## User Stories
 
-### As a first time `Ocuure` shopper, I want to :
+### As a first time `Basic Vits` shopper, I want to :
 
 * View and navigate :
-1. View a list of products so that I can select some to purchase regarding to my needs and objectives
-2. View individual products details so that I can identify the related vitamin product, price, description, product image and available format
-3. Easily view the total of my purchase so that I can manage my monthly vitamins and supplements budget
+1. View a list of products so that I can select some to purchase / build my personalized subcription package regarding to my needs and health objectives
+2. View easily individual product detsils so that I can identify the related vitamin I need in terms of product, price, description with medical insights, image and available format
+3. Easily view the total of my purchase/personalized subcription so that I can manage my monthly vitamins and supplements budget.
 
 * Register and have an account:
-4. Easily register for an account so that I can have a personal account, and be able to view my health profile
-5. Easily login or logout so that I can access my personal account information
-7. Have a personalized user profile so that I can view my personal order history / order confirmations.
+4. Easily register for an account so that I can have benefits such as discount on products.
+5. Easily and safely log in and out so that I can access my personal account information in a secure way.
+7. Have a personalized user profile so that I can view my health profile, customized recommendations, order confirmations and history subcription details.
 
 * Sort and search
 6. Sort the list of available products in a personalized way so that I can have a list of product suggestions that matches my needs
-7. Sort a specific category of product regarding to my gender / condition so that I am sure I can have what I need
-8. Sort multiple categories of products simultaneously by health goal so that I can have an overview 
+7. Sort a specific category of product regarding to my gender / persona profile so that I am sure I can have a bundle of basic and targeted products
+8. Sort multiple categories of products simultaneously by health goal so that I can have an overview of product for a specific need.
 9. Search for product by name or description directly and easily see what I've searched so that I can efficiently add what I need in my cart
 
 * Purchase and Check out
-10. Have the quantity preselected for 1 month in my cart so I am covered for an entire of month and I don't have to think how much should I buy
+10. Have the quantity preselected for 1 month in my cart renewable as a subcription so I am covered for an entire of month and I don't have to think how much should I buy
 11. View items in my bag to be purchased so I identify the total cost of my purchase and all vitamins items I will receive
 12. Easily enter payment information so that I can check out quickly and with no hassles
-13. Feel that my personal and payment information are safe when using the `Ocuure` site so that I can confidently provide the needed information to make the purchase
-14. View an order confirmation after check out so that I can verify that I haven't made any mistakes and feeling reassured.
+13. Feel that my personal and payment information are safe when using the `Basic Vits` site so that I can confidently provide the needed information to make the purchase
+14. View an order confirmation after check out so that I can verify that I haven't made any mistakes and be reassured
+15. Feel that I can trust the efficiency and the safety of the products that I am buying as it is part of nutrition so that I can feel purchase vitamins and product from `Basic Vits` confidently
 
-15. Feel that I can trust the efficiency and the safety of the products that I am buying as it is part of nutrition so that I can feel purchase vitamins and product confidently
 
-
-### As a returning `Ocuure` shopper, I want to :
+### As a returning `Basic Vits` shopper, I want to :
 
 * Account verification
 16. Receive an email confirmation after registering so that I can verify that my account registration was successful
 
 * Purchase and Check out
 17. Receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records
-18. Have the possibility to contact a team of profesionals so that I can adress potential issues with my order
+18. Have the possibility to contact a team of profesionnals (customer service or nutritionnist) so that I can adress potential issues with my order
 
 
-### As a frequent `Ocuure` shopper, I want to :
+### As a frequent `Basic Vits` shopper, I want to :
 
 * User Accounts / Purchasing and Check out
 19. Make use of my account to access easily my previous orders so that I can buy a refill of vitamins and supplements in few steps without having to fill the cart again.
 
 * Sorting and Searching
-20. Have the possibility to assess my vitamins needs so that I can see if my needs changed and if I need to order different product
+20. Have the possibility to assess my vitamins and supplements needs so that I can see if my needs changed and if I need to order different products
 
  
-### As a `Ocuure` admin site user, I want to :
+### As a `Basic Vits` admin site user, I want to :
 
 * User Accounts
-21. Easily login or logout so that I can access the product management page to work on the `Ocuure` product database
+21. Easily log in and out from a product management page so that I can access the `Basic Vits` product database and work with it efficiently
 
 - Admin and Store Management
-22. Add a product so that I can add new items to my store
+22. Add a product so that I can add new items to my online store
 23. Edit/Update a product so that I can change product prices, descriptions, images, amd other product crieria
-24. Delete a product Remove items that are no longer for sales / out of stock
+24. Delete a product so that I can remove items that are no longer for sales / out of stock
 
 
 The user stories mentionned above covers the following features :
@@ -146,20 +150,19 @@ The main colours used for this project are as follow :
 
 * `#F8F6F4`: PAMPAS (Light shades) = grey/white color
 * `#E37F61`: TERRACOTTA (Light accent) = orange / ocre color
-* `#AC5751`: MATRIX (Main brand color) = dark orange/red
+* `#AC5751`: MATRIX (Main brand color) = dark red/orange
 * `#9A8A98`: VENUS (Dark accent) = light purple/grey
 * `#3B3238`: THUNDER (Dark shades) = dark blue-grey
 
-
-Orange tones were chosen as the main brand color for `Ocuure`.
-Since it is a combination of red (physical) and yellow (emotional), orange is stimulating and bring balance.
-- Positive connotation : Physical comfort, food, warmth, security
+Warm color tones were chosen as the main brand color for `Basic Vits`.
+Orange as a color represents an abundance of strength, life, and foods.
+Since it is a combination of red (physical, blood) and yellow (emotional, light, joy), orange is an actiive and stimulating color.
+- Positive connotation : Physical comfort, food, warmth
 
 
 ### Styling
 
 ### Backgrounds
-
 
 ## Wireframes
 
@@ -260,7 +263,7 @@ The wireframes were created using Balsamiq during the Scope plan of the design a
 ## Features left to implement
 
 - Option to import blood test result within their profile account to generate a list of vitamins and supplements recommendations
-- Develop an Ocuure app so reminders to take vitamins are sent to user by mobile push notifications
+- Develop an Basic Vits app so reminders to take vitamins are sent to user by mobile push notifications
 - Receive monthly nutritive recipes ideas as per health goals set in profile account.
 - Recover password if forgotten
 - Reminder to get a refill on product recommendations (push by email)
@@ -269,7 +272,8 @@ The wireframes were created using Balsamiq during the Scope plan of the design a
 - Extend the product database by adding a new product : gift cards
 - Display number of products available with or without applying filter in the shop section
 - Free delivery for purchase about 20 euros.
-- Build a FAQ / helpcenter
+- Build a FAQ / helpcenter / education platform 
+- Sort productS alphabetically A -Z
 
 # Techonolgies used
 
@@ -278,7 +282,7 @@ The wireframes were created using Balsamiq during the Scope plan of the design a
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-* [Python](https://en.wikipedia.org/wiki/Python_(programming_language)
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ## Frameworks, Librairies & Programs Used
 
@@ -387,7 +391,7 @@ The text, images and other data in the database was sourced from various local w
 
 ### Author
 
-Ocuure is a full stack site based around business logic used to control a centrally-owned dataset and was developped by Florence Mezino, student at Code Institute for the Full Stack Software Development (March 2021 - March 2022). See Github
+Basic Vits is a full stack site based around business logic used to control a centrally-owned dataset and was developped by Florence Mezino, student at Code Institute for the Full Stack Software Development (March 2021 - March 2022). See Github
 
 ### Got Feedback ?
 
