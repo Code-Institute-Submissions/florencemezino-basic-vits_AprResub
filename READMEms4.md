@@ -181,7 +181,7 @@ The wireframes were created using Balsamiq during the Scope plan of the design a
 - [My Account - Sign in / Register]()
 - [My Account - User Profile ]()
 - [My Account - Admin Profile ]()
-- [Contact us]()
+- [About]()
 
 ## Database Structure
 
@@ -274,6 +274,7 @@ The wireframes were created using Balsamiq during the Scope plan of the design a
 - Free delivery for purchase about 20 euros.
 - Build a FAQ / helpcenter / education platform 
 - Sort productS alphabetically A -Z
+- Admin dashboard to see statics about product sales
 
 # Techonolgies used
 
@@ -313,7 +314,14 @@ AWS S3 was used to allow the cloud storage of files and media.
 9. [Django](https://en.wikipedia.org/wiki/Django_(web_framework)
 Django was used to develop a database-driven site.
 
+10. [DrawSQL](https://drawsql.app/)
+DrawSQL was used to mind mad the data structure
 
+11. [Typefom](https://admin.typeform.com/form/tHZkFFBU/create?block=01FV0JRD39249A4AT0DMS9BRVD)
+Typeform was used to create the form from "Take the test" option
+
+12. [Typeform Django integration](https://pypi.org/project/django-typeform/)
+Typeform was used as it works with django to handdle the data
 
 # Testing
 
@@ -381,6 +389,21 @@ The text, images and other data in the database was sourced from various local w
 - A step by step guide to build a Minimum Viable Product (MVP) [view](https://www.netsolutions.com/insights/how-to-build-an-mvp-minimum-viable-product-a-step-by-step-guide/)
 - Colormind [view](http://colormind.io/bootstrap/)
 - Best Fonts for Medical Printed Materials [here](https://theprintauthority.com/best-fonts-for-medical-printed-materials/)
+
+
+### Mentoring session advice
+
+* session 1 : 04-02-2022
+- Use DrawSQL for data structure [here](https://drawsql.app/)
+- How to use sessions[here](https://docs.djangoproject.com/en/dev/topics/http/sessions/)
+- Subscription model, investigate automatic monthly payment from stripe
+- Make sure any products update doesn't affect order confirmations history from user profile
+
+* session 2
+- 
+- 
+
+* session 3
 
 
 ## Acknowledgments
