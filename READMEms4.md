@@ -54,10 +54,13 @@ c. restraints
 d. ultimate goal
 - Make available a wide range of products to the shopper to make sure each of them ends up with a tailored list of products that satify their needs.
 
-## Developer and business goals
+## Business and developer goals
 
-- `Ocuure` company want to make vitamins and supplements accessible to anyone who wish to improve their health with an user friendly website.
-- `Ocuure` company business model is to 
+- `Ocuure` company want to make vitamins and supplements accessible to anyone who wish to improve their health continuously. It is a flexible monthly subscription service. End Users can modify, postpone or cancel their next order at any time in their account. Only the merch product category is a one time buy.
+- `Ocuure` company business model is to resell vitamins and supplements as a monthly subscription.
+
+- As a developer : profesionnal experience in developping an ecommerce website using Python+Django
+- As a developer : a functionnal full stack website to add in the developer's portfolio
 
 ## User Stories
 
@@ -79,40 +82,44 @@ d. ultimate goal
 8. Sort multiple categories of products simultaneously by health goal so that I can have an overview 
 9. Search for product by name or description directly and easily see what I've searched so that I can efficiently add what I need in my cart
 
-* Purchasing and Check out
+* Purchase and Check out
 10. Have the quantity preselected for 1 month in my cart so I am covered for an entire of month and I don't have to think how much should I buy
 11. View items in my bag to be purchased so I identify the total cost of my purchase and all vitamins items I will receive
 12. Easily enter payment information so that I can check out quickly and with no hassles
 13. Feel that my personal and payment information are safe when using the `Ocuure` site so that I can confidently provide the needed information to make the purchase
 14. View an order confirmation after check out so that I can verify that I haven't made any mistakes and feeling reassured.
 
+15. Feel that I can trust the efficiency and the safety of the products that I am buying as it is part of nutrition so that I can feel purchase vitamins and product confidently
+
+
 ### As a returning `Ocuure` shopper, I want to :
 
 * Account verification
-15. Receive an email confirmation after registering so that I can verify that my account registration was successful
+16. Receive an email confirmation after registering so that I can verify that my account registration was successful
 
-* Purchasing and Check out
-16. Receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records
+* Purchase and Check out
+17. Receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records
+18. Have the possibility to contact a team of profesionals so that I can adress potential issues with my order
 
 
 ### As a frequent `Ocuure` shopper, I want to :
 
 * User Accounts / Purchasing and Check out
-17. Make use of my account to access easily my previous orders so that I can buy a refill of vitamins and supplements in few steps without having to fill the cart again.
+19. Make use of my account to access easily my previous orders so that I can buy a refill of vitamins and supplements in few steps without having to fill the cart again.
 
 * Sorting and Searching
-18. Have the possibility to assess my vitamins needs so that I can see if my needs changed and if I need to order different product
+20. Have the possibility to assess my vitamins needs so that I can see if my needs changed and if I need to order different product
 
  
 ### As a `Ocuure` admin site user, I want to :
 
 * User Accounts
-19. Easily login or logout so that I can access the product management page to work on the `Ocuure` product database
+21. Easily login or logout so that I can access the product management page to work on the `Ocuure` product database
 
 - Admin and Store Management
-20. Add a product so that I can add new items to my store
-21. Edit/Update a product so that I can change product prices, descriptions, images, amd other product crieria
-22. Delete a product Remove items that are no longer for sales / out of stock
+22. Add a product so that I can add new items to my store
+23. Edit/Update a product so that I can change product prices, descriptions, images, amd other product crieria
+24. Delete a product Remove items that are no longer for sales / out of stock
 
 
 The user stories mentionned above covers the following features :
@@ -128,7 +135,7 @@ The user stories mentionned above covers the following features :
 ### Fonts / Typography
 
 The `Lora` font is the main font used throughout the whole website with `sans-serif`as fallback fonts in case for any reason the font isn't being imported into the site correctly. 
-Lora is very similar in appearance to Times New Roman. Its soft curves and larger typeface makes this font perfect for medical/nutrition purpose. The modern font gives a serious, professional appearance.
+`Lora` is very similar in appearance to Times New Roman. Its soft curves and larger typeface makes this font perfect for medical/nutrition purpose. This modern font gives a serious, professional appearance.
 
 
 ### Icons
@@ -188,23 +195,21 @@ The wireframes were created using Balsamiq during the Scope plan of the design a
 * The website is structured the following way: 
 
 1. `Home` :
-
-    - navigation bar
-        - menu
-        - search bar
-    - landing page/hero image with button to browse all products in the Shop
+    - navigation bar (take the test, shop, about)
+    - landing page/hero image with buttons to take the test or browse all products in the Shop
+    - how it works
     - examples of vitamins package per user
-    - footer
+    - footer (copyright info / social media links)
 
     ![home]()
 
 
 2. `Shop` :
+    - Search bar
+    - By category : `Vitamins`, `Minerals`,`Plants`,`Specialties`,`Accessories/Merch`
+    - By package: `Women's health`, `Men's health`, `Kids's health`, `Teenage's health`, `Senior's health`, `Pregnancy's health`
+    - By health goal : `Immunity`, `Brain`, `Energy`, `Eyes`, `Sleep`, `Stress`, `Heart`, `Joints`, `Skin`, `Hair`, `Digestion`, `Bones`, `Shape`
 
-    - By category : `Vitamins`, `Minerals`,`Plants`,`Specialties`,`Accessories/Merch`, `Gift Cards`
-    - By format : `Pill`, `Powder`, `Gummies`
-    - By persona : `Women's health`, `Men's health`, `Kids's health`, `Teenage's health`, `Senior's health`, `Pregnancy's health`
-    - By health goal : `Immunity`, `Brain`, `Energy`, `Eyes`, `Sleep`, `Stress`, `Heart`, `Joints`, `Skin`, `Hair`, `Digestion`, `Stress`, `Bones`, `Sleep`, `Shape`
 
     ![shop]()
 
@@ -220,13 +225,15 @@ The wireframes were created using Balsamiq during the Scope plan of the design a
     ![bag]()
 
 5. `My Account`:
-    - Register (discount banner : Register now and get 30% discount on your first order))
+    - Register (discount banner : Register now and get 30% discount on your first order)
     - Sign in
+    - Sign out
     - User Profile
-        - User info + health goal info
+        - User info 
+        - health goal info + product recommendations from "take the test"
         - Order history
         - Easy refill (buy again option from each order in history)
-        - Reminder to get a refill (push by email)
+
     - Admin Profile
         - Product management (CRUD : create, read, update, delete product)
         
@@ -236,10 +243,12 @@ The wireframes were created using Balsamiq during the Scope plan of the design a
     ![my account user profile]()
     ![my account admin profile]()
 
-6. `Contact us` :
-    - form to contact (field for order confirmation if any)
+6. `About` :
+    - values / ethics / trust / product reliability
+    - team + discover their vitamins package
+    - contact form(field for order confirmation if user is logged in)
 
-    ![contact us]()
+    ![About]()
 
 
 * The website's pages and different features are responsive on all device sizes. 
@@ -254,6 +263,13 @@ The wireframes were created using Balsamiq during the Scope plan of the design a
 - Develop an Ocuure app so reminders to take vitamins are sent to user by mobile push notifications
 - Receive monthly nutritive recipes ideas as per health goals set in profile account.
 - Recover password if forgotten
+- Reminder to get a refill on product recommendations (push by email)
+- Reminder to take the test again 
+- Extend the product database with different product format, other than pills such as gummies, powder etc.
+- Extend the product database by adding a new product : gift cards
+- Display number of products available with or without applying filter in the shop section
+- Free delivery for purchase about 20 euros.
+- Build a FAQ / helpcenter
 
 # Techonolgies used
 
@@ -360,9 +376,7 @@ The text, images and other data in the database was sourced from various local w
 ### Other ressources 
 - A step by step guide to build a Minimum Viable Product (MVP) [view](https://www.netsolutions.com/insights/how-to-build-an-mvp-minimum-viable-product-a-step-by-step-guide/)
 - Colormind [view](http://colormind.io/bootstrap/)
-- Psychological properties of colours was found [here]()
-- Psychological properties of fonts was found [here]()
-
+- Best Fonts for Medical Printed Materials [here](https://theprintauthority.com/best-fonts-for-medical-printed-materials/)
 
 
 ## Acknowledgments
