@@ -185,10 +185,16 @@ The wireframes were created using Balsamiq during the Scope plan of the design a
 
 ## Database Structure
 
-#### Mindmap 
+#### Basic Vits Database structure using drawSQL
+
+![Basic Vits](relational_database_structure.png)
 
 
 #### AWS S3 
+
+Amazon Web Service (AWS) S3 was used to store all images available on the Basic Vits sie.
+
+![S3](s3_images_storage.png)
 
 
 # Features
@@ -259,22 +265,29 @@ The wireframes were created using Balsamiq during the Scope plan of the design a
 * There is a footer with copyright information and social media links.
 
 
-
 ## Features left to implement
 
-- Option to import blood test result within their profile account to generate a list of vitamins and supplements recommendations
-- Develop an Basic Vits app so reminders to take vitamins are sent to user by mobile push notifications
-- Receive monthly nutritive recipes ideas as per health goals set in profile account.
-- Recover password if forgotten
-- Reminder to get a refill on product recommendations (push by email)
-- Reminder to take the test again 
-- Extend the product database with different product format, other than pills such as gummies, powder etc.
-- Extend the product database by adding a new product : gift cards
-- Display number of products available with or without applying filter in the shop section
-- Free delivery for purchase about 20 euros.
-- Build a FAQ / helpcenter / education platform 
+* Shop
 - Sort productS alphabetically A -Z
+- Display number of products available with or without applying filter in the shop section
+
+* User account
+- Incentive : free delivery for purchase about 20 euros.
+- Follow up : reminder to take the test again to asses possible new needs
+- Recover password if forgotten
+- Receive monthly nutritive recipes ideas as per health goals set in profile account
+- Develop a calendar : reminders to take vitamins as per subcription
+- Import blood test result to generate a list of vitamins and supplements recommendations
+
+*  User admin
+- Possibility to add, edit and delete products category, products health goal, products package, products subcription
+- New offer : Extend the product database by adding a new product category called gift cards
+- New offer : Extend the product database with different product format, other than pills such as gummies, powder etc.
 - Admin dashboard to see statics about product sales
+
+* About
+- Build a FAQ / helpcenter / education platform 
+
 
 # Techonolgies used
 
