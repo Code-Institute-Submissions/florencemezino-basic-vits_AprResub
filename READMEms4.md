@@ -271,6 +271,7 @@ Amazon Web Service (AWS) S3 was used to store all images available on the Basic 
 - Display number of products available with or without applying filter in the shop section
 
 * User account
+- Register and sign in with social media account
 - Incentive : free delivery for purchase about 20 euros.
 - Follow up : reminder to take the test again to asses possible new needs
 - Recover password if forgotten
@@ -389,6 +390,8 @@ The text, images and other data in the database was sourced from various local w
 
 - All content was written by the developer.
 
+### Project inspiration models
+    - [Boutique Ado] walkthrough project developped by Code Institute for educational purpose (https://github.com/Code-Institute-Solutions/boutique_ado_v1)
 
 ### Readme.md inspiration models 
     - [Love running](https://github.com/Code-Institute-Solutions/readme-template#readme)
