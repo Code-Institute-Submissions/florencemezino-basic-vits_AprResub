@@ -189,7 +189,6 @@ The wireframes were created using Balsamiq during the Scope plan of the design a
 
 ![Basic Vits](relational_database_structure.png)
 
-
 #### AWS S3 
 
 Amazon Web Service (AWS) S3 was used to store all images available on the Basic Vits sie.
