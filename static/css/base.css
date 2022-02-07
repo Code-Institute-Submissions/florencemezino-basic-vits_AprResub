@@ -1,0 +1,97 @@
+html {
+    margin: 0;
+    height : 100%;
+}
+
+body {
+    background:url('/media/homepage_background_image2.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh -164px);
+    color: #333;
+    font-size: 20px;
+    font-family: 'Lora', sans-serif;
+    background-size: cover;
+
+}
+
+h1 {
+    color:brown;
+    font-weight: 500;
+}
+
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: brown;
+}
+
+.main-logo-link {
+    width: fit-content;
+    color : brown;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+
+.test-now-button {
+    background: brown;
+    color: white;
+    min-width: 260px;
+}
+
+.test-now-button:hover,
+.test-now-button:active,
+.test-now-button:focus {
+    background: #6a6f22;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link {
+    color :brown;;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-linkfocus {
+    color:#6a6f22;
+
+}
+
+
+
+
+
+.how-to-title{
+    color: #6a6f22;
+}
+
+
+* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}

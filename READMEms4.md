@@ -393,20 +393,23 @@ The text, images and other data in the database was sourced from various local w
 
 - All content was written by the developer.
 
-### Project inspiration models
-    - [Boutique Ado] walkthrough project developped by Code Institute for educational purpose (https://github.com/Code-Institute-Solutions/boutique_ado_v1)
+### Project / Code inspiration models
+- Boutique Ado walkthrough project developped by Code Institute for educational purpose [view](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
+- “bootstrap remove underline from link” Code Answer’s [view](https://www.codegrepper.com/code-examples/whatever/bootstrap+remove+underline+from+link)
+- Centering brand logo in Bootstrap Navbar [view](https://stackoverflow.com/questions/23400234/centering-brand-logo-in-bootstrap-navbar)
+- Bootstrap spacing [view](https://getbootstrap.com/docs/4.0/utilities/spacing/)
 
 ### Readme.md inspiration models 
-    - [Love running](https://github.com/Code-Institute-Solutions/readme-template#readme)
-    - [Code Institute Sample README](https://github.com/Code-Institute-Solutions/SampleREADME/blob/master/README.md)
-    - [Readme.md sample from Anna Greaves's portrait artist]()
-    - Basic writing and formatting syntax for markdown files [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- Love running [view](https://github.com/Code-Institute-Solutions/readme-template#readme)
+- Code Institute Sample README [view](https://github.com/Code-Institute-Solutions/SampleREADME/blob/master/README.md)
+- Readme.md sample from Anna Greaves's portrait artist[view]()
+- Basic writing and formatting syntax for markdown files [view](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 
 ### Other ressources 
 - A step by step guide to build a Minimum Viable Product (MVP) [view](https://www.netsolutions.com/insights/how-to-build-an-mvp-minimum-viable-product-a-step-by-step-guide/)
 - Colormind [view](http://colormind.io/bootstrap/)
-- Best Fonts for Medical Printed Materials [here](https://theprintauthority.com/best-fonts-for-medical-printed-materials/)
+- Best Fonts for Medical Printed Materials [view](https://theprintauthority.com/best-fonts-for-medical-printed-materials/)
 
 
 ### Mentoring session advice
