@@ -1,0 +1,39 @@
+[
+   {
+      "pk":1,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340155",
+         "name":"B-Complex",
+         "description":"Supports the nervous system and promotes energy metabolism",
+         "price":10,
+         "category":1,
+         "image":"product_b-complex.png",
+      }
+   },
+   {
+      "pk":2,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001730010",
+         "name":"Vitamin B12",
+         "description":"Easy to digest, formulated for vegans and essential vitamins for energy production",
+         "price":5,
+         "category":1,
+         "image":"product_vitamin-b-12.png"
+      }
+   },
+   {
+      "pk":3,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001890157",
+         "name":"Vitamin C",
+         "description":"Helps maintain a healthy immune system, easy to digest, formulated for absorption",
+         "price":5,
+         "category":1,
+         "image":"product_vitamin-c.png"
+      }
+   },
+  
+]
