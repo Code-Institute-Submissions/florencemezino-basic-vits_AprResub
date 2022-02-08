@@ -15,9 +15,8 @@ body {
 }
 
 h1 {
-    color:brown;
+    color:#033718;
 }
-
 
 .icon {
     align-items: center;
@@ -25,19 +24,40 @@ h1 {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-    color: brown;
+    color: #a98a44;
 }
 
-.main-logo-link {
+
+#topnav {
+    position: relative;
+}
+
+.main-logo {
     width: fit-content;
-    color : brown;
+    color : #FC8D1E;
     text-decoration: none;
-    font-size: 32px;
+    position : relative;
+    left: 50%;
+    margin-left: -50px !important;
+    display: block;
+}
+
+
+.nav-link {
+    color :#033718;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-linkfocus {
+    color:#a98a44;
+
 }
 
 
 .test-now-button {
-    background: brown;
+    background: #FC8D1E;
     color: white;
     min-width: 260px;
 }
@@ -45,29 +65,30 @@ h1 {
 .test-now-button:hover,
 .test-now-button:active,
 .test-now-button:focus {
-    background: #6a6f22;
+    background: #a98a44;
     color: white;
     text-decoration: none;
 }
 
-.nav-link {
-    color :brown;;
+.shop-now-button {
+    background: #033718;
+    color: white;
+    min-width: 260px;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus {
+    background: #a98a44;
+    color: white;
     text-decoration: none;
 }
-
-.nav-link:hover,
-.nav-link:active,
-.nav-linkfocus {
-    color:#6a6f22;
-
-}
-
 
 
 
 
 .how-to-title{
-    color: #6a6f22;
+    color: #033718;
 }
 
 
