@@ -1,21 +1,43 @@
 html {
+    height: auto;
     margin: 0;
-    height : 100%;
+    width: 100%;
 }
 
 body {
-    background:url('/media/homepage_background_image.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh -164px);
     color: #333;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Lora', sans-serif;
+    margin: 0;
 
 }
 
-h1 {
-    color:#033718;
+.hero-home {
+    background:url('/media/homepage_background_image.jpeg') no-repeat center center fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    min-height: 250px;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction :column;
+    align-items: center;
+    justify-content :center
 }
+
+.subcription-steps {
+    padding: 12vh 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.subcription-step {
+    flex: 0 1 30%;
+
+} 
+
+
 
 .icon {
     align-items: center;
@@ -26,9 +48,13 @@ h1 {
     color: #a98a44;
 }
 
+* -------------------------------- Base template */
 
 #topnav {
-    position: relative;
+    position: sticky; 
+    top: 0px;
+    display: flex;
+
 }
 
 .main-logo {
@@ -51,7 +77,6 @@ h1 {
 .nav-link:active,
 .nav-linkfocus {
     color:#a98a44;
-
 }
 
 
@@ -87,6 +112,12 @@ h1 {
 .how-to-title{
     color: #033718;
 }
+
+
+/* .testimony-picture {
+    border-radius: 50%;
+} */
+
 
 * -------------------------------- Overlay */
 
