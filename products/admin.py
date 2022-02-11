@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category
+from .models import Product, Category, HealthGoal, Package
 
 # Register your models here.
 
@@ -7,13 +7,15 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
         'name',
-        'description',
+        'description_benefits',
         'category',
+        'quantity',
         'price',
         'image',
-    )
+        ['immunity', 'brain', 'energy', 'eyes', 'sleep', 'stress', 'heart', 'joints', 'skin', 'hair', 'digestion', 'bones', 'shape',],
+)
 
-    ordering = ('sku',)
+    ordering = ('name',)
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
@@ -21,5 +23,21 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
+
+class HealthGoalAdmin(admin.ModelAdmin):
+    list_display = (
+        'friendly_name',
+        'name',
+    )
+
+
+class PackageAdmin(admin.ModelAdmin):
+    list_display = (
+        'friendly_name',
+        'name',
+    )
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
+admin.site.register(HealthGoal, HealthGoalAdmin)
+admin.site.register(Package, PackageAdmin)

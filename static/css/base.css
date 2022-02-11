@@ -34,7 +34,6 @@ body {
 
 .subcription-step {
     flex: 0 1 30%;
-
 } 
 
 
@@ -114,9 +113,9 @@ body {
 }
 
 
-/* .testimony-picture {
-    border-radius: 50%;
-} */
+.testimony-picture {
+    border-radius: 5%;
+}
 
 
 * -------------------------------- Overlay */

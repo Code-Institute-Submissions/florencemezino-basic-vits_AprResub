@@ -398,6 +398,8 @@ The text, images and other data in the database was sourced from various local w
 - “bootstrap remove underline from link” Code Answer’s [view](https://www.codegrepper.com/code-examples/whatever/bootstrap+remove+underline+from+link)
 - Centering brand logo in Bootstrap Navbar [view](https://stackoverflow.com/questions/23400234/centering-brand-logo-in-bootstrap-navbar)
 - Bootstrap spacing [view](https://getbootstrap.com/docs/4.0/utilities/spacing/)
+- Flexbox tutorial -  building a simple layout with Flexbox [view](https://www.youtube.com/watch?v=JqJNhM8i-nc)
+- django-taggit [view](https://django-taggit.readthedocs.io/en/latest/getting_started.html)
 
 ### Readme.md inspiration models 
 - Love running [view](https://github.com/Code-Institute-Solutions/readme-template#readme)
