@@ -11,35 +11,45 @@
 
 
 {% block content %}
-<div class="overlay"></div>
-    <div class="container-fluid">
+<div class="overlay">
+    <div class="container-fluid col-10 offset-1">
+        <div class="row mt-1 mb-2">
+            <section class="py-5 text-center container">
+                <div class="row py-lg-6">
+                  <div class="col-lg-6 col-md-8 mx-auto">
+                    <h3 class="fw-light">Build your own package</h3>
+                    <p class="lead text-muted">Take ownership of your health and pick up your basic vits</p>
+                  </div>
+                </div>
+              </section>
+            </div>
         <div class="row">
-                
-        </div>
-        <div class="row">
-            {% for product in products %}   <!-- for category in products ?-->
+            {% for product in products %}  
             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div class="card" style="width: 18rem;">
                     {% if product.image %} 
-                    <a href="">
-                        <img src="{{ product_image }}" class="card-img-top" alt="{{ product_name }}">
-                    </a>
+                    <!-- <a href=""> -->
+                        <img src="{{ product.image }}" class="card-img-top" alt="{{ product.name }}">
+                    <!-- </a> -->
                     {% else %}
-                    <a>
-                        <img src="noimage.png" class="card-img-top" alt="{{ product_name }}">
-                     </a>
+                    <!-- <a> -->
+                        <img src="media/noimage.png" class="card-img-top" alt="{{ product.name }}">
+                     <!-- </a> -->
                     {% endif %}
                     <div class="card-body">
-                      <h5 class="card-title">{{ product_name }}</h5>
-                      <p class="card-text">{{ description_benefits }}</p>
+                      <h5 class="card-title">{{ product.name }}</h5>
+                      <p class="card-text">{{ product.description_benefits }}</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item">{{ product_health_goal}}</li>
-                      <li class="list-group-item">{{ product_quantity }}</li>
+                      <li class="list-group-item">{{ product.healthgoal}}</li>
+                      <li class="list-group-item"><small>{{ product.quantity }}</small></li>
                     </ul>
                     <div class="card-body">
-                        <p class="mb-0 text-right">{{ product_price }}</p>
-                      <a href="#" class="card-link">Add</a>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <p class="text-muted mb-0">€{{ product.price }}</p>
+                          <button type="button" class="btn btn-sm btn-outline-success">Add</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   {% if forloop.counter|divisibleby:1 %}
@@ -66,4 +76,11 @@
             </div>
         </div>
     </div>
-{% endblock %}
+    {% endblock %}
+
+
+
+
+
+
+
