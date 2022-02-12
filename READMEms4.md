@@ -189,6 +189,14 @@ The wireframes were created using Balsamiq during the Scope plan of the design a
 
 ![Basic Vits](relational_database_structure.png)
 
+* Products retail mapping
+
+- PV0000 : Sku / Vitamins
+- PMI0000 : Sku / Minerals
+- PP0000 : Sku / Plants
+- PS0000 : Sku / Specialities
+- PME000 : Sku / Merchandises
+
 #### AWS S3 
 
 Amazon Web Service (AWS) S3 was used to store all images available on the Basic Vits sie.
@@ -393,13 +401,15 @@ The text, images and other data in the database was sourced from various local w
 
 - All content was written by the developer.
 
-### Project / Code inspiration models
+### Project code ressources
 - Boutique Ado walkthrough project developped by Code Institute for educational purpose [view](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
 - “bootstrap remove underline from link” Code Answer’s [view](https://www.codegrepper.com/code-examples/whatever/bootstrap+remove+underline+from+link)
 - Centering brand logo in Bootstrap Navbar [view](https://stackoverflow.com/questions/23400234/centering-brand-logo-in-bootstrap-navbar)
 - Bootstrap spacing [view](https://getbootstrap.com/docs/4.0/utilities/spacing/)
 - Flexbox tutorial -  building a simple layout with Flexbox [view](https://www.youtube.com/watch?v=JqJNhM8i-nc)
 - django-taggit [view](https://django-taggit.readthedocs.io/en/latest/getting_started.html)
+- Django: How can I create a multiple select form? [view](https://stackoverflow.com/questions/15393134/django-how-can-i-create-a-multiple-select-form)
+
 
 ### Readme.md inspiration models 
 - Love running [view](https://github.com/Code-Institute-Solutions/readme-template#readme)
