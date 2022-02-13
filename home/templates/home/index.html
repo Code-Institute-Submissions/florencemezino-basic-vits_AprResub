@@ -3,20 +3,26 @@
 
 {% block page_header %}
 
- <header class="container-fluid text-center h-100 header-container ">
-    <div class="row ">
-        <div class="col-12 hero-home ">
-            <div class="mt-5 text-center ">
-                <a href="" class="test-now-button btn-primary btn-lg py-3">Take the test</a>
-                <a href="{% url 'products' %}" class="shop-now-button btn-primary btn-lg py-3">Shop now</a>
-            </div>
-        </div>
-    </div>
-</header>
+<!-- <div class="container header-container">
+  <div class="row">
+      <div class="col"></div>
+  </div>
+</div> -->
 
 {% endblock %}
 
 {% block content %}
+
+<header class="container-fluid text-center h-100 header-container ">
+  <div class="row ">
+      <div class="col-12 hero-home ">
+          <div class="mt-5 text-center ">
+              <a href="" class="test-now-button btn-primary btn-lg py-3">Take the test</a>
+              <a href="{% url 'products' %}" class="shop-now-button btn-primary btn-lg py-3">Shop now</a>
+          </div>
+      </div>
+  </div>
+</header>
 
     <!--How it works -->
 

@@ -19,7 +19,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
-
     {% endblock %}
 
     {% block extra_css %}
@@ -39,10 +38,6 @@
     <title>Basic Vits {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-
-    {% block page_header %}
-    {% endblock %}
-
    <!-- Navigation bar -->
     <nav class="container-fluid fixed-top">
         <div id="top-nav" class="row bg-white pt-lg-2 d-none d-lg-flex">
@@ -135,6 +130,9 @@
     <div class="message-container"></div>
     {% endif %}
 
+    {% block page_header %}
+    {% endblock %}
+
     {% block content %}
     {% endblock %}
      <!-- Footer -->
@@ -170,8 +168,6 @@
     </div>
 </footer>
    <!-- Footer -->
-
- 
 
     {% block postloadjs %}
     {% endblock %}
