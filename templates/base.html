@@ -40,6 +40,8 @@
   </head>
   <body>
 
+    {% block page_header %}
+    {% endblock %}
 
    <!-- Navigation bar -->
     <nav class="container-fluid fixed-top">
@@ -73,7 +75,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item">
-                        <form method="GET" action="">
+                        <form method="GET" action="{% url 'products' %}">
                             <div class="input-group w-100">
                                 <input class="form-control border border-black" type="text" name="q" placeholder="Search our site">
                                 <div class="input-group-append">
@@ -128,34 +130,48 @@
     </nav>
    <!--/.Navigation bar -->
 
+
     {% if messages %}
     <div class="message-container"></div>
     {% endif %}
 
-     <!-- Footer -->
-   <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-        </a>
-        <span class="text-muted">&copy; 2022 Basic Vits, Inc</span>
-      </div>
-  
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="https://twitter.com/"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-      </ul>
-    </footer>
-  </div>
-   <!-- Footer -->
-
-    {% block page_header %}
-    {% endblock %}
-
     {% block content %}
     {% endblock %}
+     <!-- Footer -->
+
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <span class="text-muted">&copy; 2022 Basic Vits, Inc</span>
+    </div>
+    <div class="col-md-2 d-flex align-items-center">
+    <ul class="list-inline social-links">
+        <li class="list-inline-item">
+          <a target="_blank" href="https://www.facebook.com/">
+            <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
+            <span class="sr-only">Facebook</span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a target="_blank" href="https://twitter.com/">
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+            <span class="sr-only">Twitter</span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a target="_blank" href="https://www.instagram.com/">
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+            <span class="sr-only">Instagram</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+</footer>
+   <!-- Footer -->
+
+ 
 
     {% block postloadjs %}
     {% endblock %}
