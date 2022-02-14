@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product, Category, HealthGoal, Package
 from taggit.models import Tag
+
+from .models import Product, Category, HealthGoal, Package
 
 # Create your views here.
 
@@ -35,7 +36,7 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.errir(request, "You didn't enter any search criteria!")
+                messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
 
             queries = Q(name__icontains=query) | Q(description_benefits__icontains=query) | Q(tag__icontains=query)
