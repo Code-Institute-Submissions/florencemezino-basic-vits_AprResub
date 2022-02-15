@@ -23,15 +23,14 @@ def all_products(request):
             categories = Category.objects.filter(name__in=categories)
 
         if 'healthgoal' in request.GET:
-            healthgoals =  request.GET['healthgoal'].split(',')
+            healthgoals = request.GET['healthgoal'].split(',')
             products = products.filter(healthgoal__name__in=healthgoals)
             healthgoals = HealthGoal.objects.filter(name__in=healthgoals)
 
         if 'package' in request.GET:
-            packages =  request.GET['package'].split(',')
+            packages = request.GET['package'].split(',')
             products = products.filter(package__name__in=packages)
             packages = Package.objects.filter(name__in=packages)
-
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -44,7 +43,7 @@ def all_products(request):
 
     context = {
         'products': products,
-        'search_term':query,
+        'search_term': query,
         'current_categories': categories,
         'current_healthgoals': healthgoals,
         'current_packages': packages,

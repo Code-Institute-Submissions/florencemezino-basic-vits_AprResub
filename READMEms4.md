@@ -427,16 +427,21 @@ The text, images and other data in the database was sourced from various local w
 ### Mentoring session advice
 
 * session 1 : 04-02-2022
-- Use DrawSQL for data structure [here](https://drawsql.app/)
+- Use DrawSQL to wireframe data structure [view](https://drawsql.app/)
 - How to use sessions[here](https://docs.djangoproject.com/en/dev/topics/http/sessions/)
 - Subscription model, investigate automatic monthly payment from stripe
 - Make sure any products update doesn't affect order confirmations history from user profile
+
+* slack session : 15-02-2022
+- How to Use Django's Generic Relations [view](https://simpleisbetterthancomplex.com/tutorial/2016/10/13/how-to-use-generic-relations.html)
 
 * session 2
 - 
 - 
 
 * session 3
+
+
 
 
 ## Acknowledgments
