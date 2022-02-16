@@ -20,6 +20,37 @@ Lighthouse - [Results](static/assets/testing/lighthousems3_results.png)
 
 ### Manual (logical) testing of all elements and functionality on every page.
 
+###  Code Intitute assessment team testing tips
+
+* MVP concept
+- Get the “need to have” pieces :
+    - Home / take a test
+    - Products
+        - product 1: Subcription 
+        - product 2: Items
+    - Bag 
+    - Check out / Stripe
+    - Accounts
+        - User/Shopper
+        - User/Admin
+
+- Get the “nice to have” pieces :
+    - Suggestion of products with great combination with the one being bought
+
+
+* AWS S3 buckets to host your static and media files
+- AWS keys are in environment variables and are not pushed to git : `Success`
+- Make AWS S3 publically accessible : `Success`
+- use the collectstatic Django command after editing static files in addition to pushing to GitHub : `Success`
+
+* Authentification testing
+- Ensure that users not logged in are redirected to the login page : `Success`
+- Check that authentication cannot be bypassed by typing the URL into the browser bar -  consider creating custom 403/404 pages to deal with this : `Success`
+- Make sure you have checked that no links result in an internal server error : `Success`
+- If you have included a user type with higher access privileges, then you can include example login credentials at submissio : `Success`
+- Do not display links the user does not have the privileges to access : `Success`
+
+
 ## Further Testing
 
 * The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
