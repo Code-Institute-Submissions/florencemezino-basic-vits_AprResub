@@ -5,12 +5,12 @@
                 Category
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{ url 'products' %}?category=vitamins" class="dropdown-item">Vitamins</a>
-                <a href="{ url 'products' %}?category=minerals" class="dropdown-item ">Minerals</a>
-                <a href="{ url 'products' %}?category=plants" class="dropdown-item ">Plants</a>
-                <a href="{ url 'products' %}?category=specialities" class="dropdown-item ">Specialities</a>
-                <a href="{ url 'products' %}?category=merchandises" class="dropdown-item ">Merchandises</a>
-                <a href="{ url 'products' %}?category=vitamins, minerals, plants, specialities, merchandises" class="dropdown-item ">All categories</a>
+                <a href="{% url 'products' %}?category=vitamins" class="dropdown-item">Vitamins</a>
+                <a href="{% url 'products' %}?category=minerals" class="dropdown-item ">Minerals</a>
+                <a href="{% url 'products' %}?category=plants" class="dropdown-item ">Plants</a>
+                <a href="{% url 'products' %}?category=specialities" class="dropdown-item ">Specialities</a>
+                <a href="{% url 'products' %}?category=merchandises" class="dropdown-item ">Merchandises</a>
+                <a href="{% url 'products' %}?category=vitamins,minerals,plants,specialities,merchandises" class="dropdown-item ">All products</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -18,19 +18,19 @@
                 Health Goal
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{ url 'products' %}?healthgoal=immunity" class="dropdown-item">Immunity</a>
-                <a href="{ url 'products' %}?healthgoal=brain" class="dropdown-item">Brain</a>
-                <a href="{ url 'products' %}?healthgoal=energy" class="dropdown-item ">Energy</a>
-                <a href="{ url 'products' %}?healthgoal=eyes" class="dropdown-item ">Eyes</a>
-                <a href="{ url 'products' %}?healthgoal=sleep" class="dropdown-item ">Sleep</a>
-                <a href="{ url 'products' %}?healthgoal=stress" class="dropdown-item ">Stress</a>
-                <a href="{ url 'products' %}?healthgoal=heart" class="dropdown-item">Heart</a>
-                <a href="{ url 'products' %}?healthgoal=joints" class="dropdown-item ">Joints</a>
-                <a href="{ url 'products' %}?healthgoal=skin" class="dropdown-item ">Skin</a>
-                <a href="{ url 'products' %}?healthgoal=hair" class="dropdown-item ">Hair</a>
-                <a href="{ url 'products' %}?healthgoal=digestion" class="dropdown-item ">Digestion</a>
-                <a href="{ url 'products' %}?healthgoal=bones" class="dropdown-item ">Bones</a>
-                <a href="{ url 'products' %}?healthgoal=shape" class="dropdown-item ">Shape</a>
+                <a href="{% url 'products' %}?healthgoal=immunity" class="dropdown-item">Immunity</a>
+                <a href="{% url 'products' %}?healthgoal=brain" class="dropdown-item">Brain</a>
+                <a href="{% url 'products' %}?healthgoal=energy" class="dropdown-item ">Energy</a>
+                <a href="{% url 'products' %}?healthgoal=eyes" class="dropdown-item ">Eyes</a>
+                <a href="{% url 'products' %}?healthgoal=sleep" class="dropdown-item ">Sleep</a>
+                <a href="{% url 'products' %}?healthgoal=stress" class="dropdown-item ">Stress</a>
+                <a href="{% url 'products' %}?healthgoal=heart" class="dropdown-item">Heart</a>
+                <a href="{% url 'products' %}?healthgoal=joints" class="dropdown-item ">Joints</a>
+                <a href="{% url 'products' %}?healthgoal=skin" class="dropdown-item ">Skin</a>
+                <a href="{% url 'products' %}?healthgoal=hair" class="dropdown-item ">Hair</a>
+                <a href="{% url 'products' %}?healthgoal=digestion" class="dropdown-item ">Digestion</a>
+                <a href="{% url 'products' %}?healthgoal=bones" class="dropdown-item ">Bones</a>
+                <a href="{% url 'products' %}?healthgoal=shape" class="dropdown-item ">Shape</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -38,12 +38,12 @@
                 Package
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{ url 'products' %}?package=women_health" class="dropdown-item">Women's health</a>
-                <a href="{ url 'products' %}?package=men_health" class="dropdown-item ">Men's health</a>
-                <a href="{ url 'products' %}?package=kids_health" class="dropdown-item ">Kid's health</a>
-                <a href="{ url 'products' %}?package=teens_health" class="dropdown-item ">Teenage's health</a>
-                <a href="{ url 'products' %}?package=seniors_health" class="dropdown-item ">Senior'd health</a>
-                <a href="{ url 'products' %}?package=pregnancy_health" class="dropdown-item ">Pregnancy's health</a>
+                <a href="{% url 'products' %}?package=women_health" class="dropdown-item">Women's health</a>
+                <a href="{% url 'products' %}?package=men_health" class="dropdown-item ">Men's health</a>
+                <a href="{% url 'products' %}?package=kids_health" class="dropdown-item ">Kid's health</a>
+                <a href="{% url 'products' %}?package=teens_health" class="dropdown-item ">Teenage's health</a>
+                <a href="{% url 'products' %}?package=seniors_health" class="dropdown-item ">Senior'd health</a>
+                <a href="{% url 'products' %}?package=pregnancy_health" class="dropdown-item ">Pregnancy's health</a>
             </div>
         </li>
         <li class="nav-item dropdown">
