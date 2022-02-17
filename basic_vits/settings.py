@@ -163,6 +163,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Adding tagging 
+# https://django-taggit.readthedocs.io/en/latest/api.html#filtering
 
 TAGGIT_CASE_INSENSITIVE = True
 
