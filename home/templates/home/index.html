@@ -13,19 +13,20 @@
 
 {% block content %}
 
-<header class="container-fluid text-center h-100 header-container ">
-  <div class="row ">
-      <div class="col-12 hero-home ">
-          <div class="mt-5 text-center ">
-              <a href="" class="test-now-button btn-primary btn-lg py-3">Take the test</a>
-              <a href="{% url 'products' %}" class="shop-now-button btn-primary btn-lg py-3">Shop now</a>
-          </div>
-      </div>
-  </div>
-</header>
+  <!--Hero image -->
+  <header class="container-fluid text-center h-100 header-container ">
+    <div class="row ">
+        <div class="col-12 hero-home ">
+            <div class="mt-5 text-center ">
+                <a href="" class="test-now-button btn-primary btn-lg py-3">Take the test</a>
+                <a href="{% url 'products' %}" class="shop-now-button btn-primary btn-lg py-3">Shop now</a>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!--Hero image -->
 
-    <!--How it works -->
-
+  <!--How it works -->
     <section class="py-5 text-center container-fluid">
         <div class="row py-lg-3">
           <div class="col-lg-6 col-md-8 mx-auto">
@@ -77,6 +78,7 @@
             </div>
         </div>
     </div> -->
+    
 
 
     <section class="py-5 text-center container">
@@ -86,12 +88,9 @@
           </div>
         </div>
     </section>
-
-
     <!--/.How it works -->
 
     <!-- Testimonies -->
-
     <div class="container">
         <div class="row mb-2">
           <div class="col-md-6">
@@ -134,7 +133,6 @@
           </div>
         </div>
     </div>
-
    <!--/.Testimonies -->
     
 {% endblock %}

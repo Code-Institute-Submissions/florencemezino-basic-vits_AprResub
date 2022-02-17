@@ -410,6 +410,8 @@ The text, images and other data in the database was sourced from various local w
 - django-taggit [view](https://django-taggit.readthedocs.io/en/latest/getting_started.html)
 - Django: How can I create a multiple select form? [view](https://stackoverflow.com/questions/15393134/django-how-can-i-create-a-multiple-select-form)
 
+-  DevLabs: Tips on Debugging Errors [view](https://youtu.be/cdo9NfKVHWw)
+
 
 ### Readme.md inspiration models 
 - Love running [view](https://github.com/Code-Institute-Solutions/readme-template#readme)
@@ -426,20 +428,20 @@ The text, images and other data in the database was sourced from various local w
 
 ### Mentoring session advice
 
-* session 1 : 04-02-2022
+* Mentor Session 1: Project Planning / 04-02-2022
 - Use DrawSQL to wireframe data structure [view](https://drawsql.app/)
 - How to use sessions[here](https://docs.djangoproject.com/en/dev/topics/http/sessions/)
 - Subscription model, investigate automatic monthly payment from stripe
 - Make sure any products update doesn't affect order confirmations history from user profile
 
-* slack session : 15-02-2022
+* Project inception / 15-02-2022
 - How to Use Django's Generic Relations [view](https://simpleisbetterthancomplex.com/tutorial/2016/10/13/how-to-use-generic-relations.html)
 
-* session 2
+* Mentor Session 2: Mid-Point Project Review
 - 
 - 
 
-* session 3
+* Mentor Session 3: Final Project Review
 
 
 

@@ -23,20 +23,18 @@ Lighthouse - [Results](static/assets/testing/lighthousems3_results.png)
 ###  Code Intitute assessment team testing tips
 
 * MVP concept
-- Get the “need to have” pieces :
+- Get the “need to have” pieces : `Success`
     - Home / take a test
     - Products
-        - product 1: Subcription 
+        - product 1: Subscription 
         - product 2: Items
-    - Bag 
-    - Check out / Stripe
+    - Bag  + Check out / Stripe
     - Accounts
         - User/Shopper
         - User/Admin
-
-- Get the “nice to have” pieces :
+- Get the “nice to have” pieces : `Success`
     - Suggestion of products with great combination with the one being bought
-
+    - About : customer service contact form
 
 * AWS S3 buckets to host your static and media files
 - AWS keys are in environment variables and are not pushed to git : `Success`
@@ -49,6 +47,14 @@ Lighthouse - [Results](static/assets/testing/lighthousems3_results.png)
 - Make sure you have checked that no links result in an internal server error : `Success`
 - If you have included a user type with higher access privileges, then you can include example login credentials at submissio : `Success`
 - Do not display links the user does not have the privileges to access : `Success`
+
+*  Deployment
+- As soon as you have a working application, you should deploy to Heroku : `Success`
+- correct requirements.txt, Procfile, allowed host and config vars : `Success`
+- Ensure your environment variable file is added to your .gitignore file : `Success`
+- Use environment variables for your secret key, Postgres URI, AWS keys and Stripe keys :`Success`
+- Use a combination of if-else and environment variables in the settings.py to ensure the application is correctly set up on Heroku : `Success`
+
 
 
 ## Further Testing
