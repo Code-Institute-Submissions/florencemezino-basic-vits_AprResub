@@ -47,7 +47,7 @@ body {
     color: #a98a44;
 }
 
-* -------------------------------- Base template */
+/* -------------------------------- Base template */
 
 #topnav {
     position: sticky; 
@@ -122,8 +122,26 @@ body {
     cursor: pointer;
 }
 
+/* ------------------------------- bootstrap toasts */
 
-* -------------------------------- Overlay */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+
+
+/* -------------------------------- Overlay */
 
 .overlay {
 	height: 100%;
@@ -136,7 +154,7 @@ body {
 }
 
 
-* -------------------------------- Media Queries */
+/* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
