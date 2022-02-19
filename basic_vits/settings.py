@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'products',
     'taggit',
     'bag',
+    'checkout',
+
 ]
 
 MIDDLEWARE = [
@@ -170,5 +172,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 TAGGIT_CASE_INSENSITIVE = True
 
-FREE_DELIVERY_THRESHOLD = 50
+FREE_DELIVERY_THRESHOLD = 20
 STANDARD_DELIVERY_PERCENTAGE = 10
