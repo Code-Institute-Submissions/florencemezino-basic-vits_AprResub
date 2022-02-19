@@ -117,6 +117,11 @@ body {
     border-radius: 5%;
 }
 
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 
 * -------------------------------- Overlay */
 
