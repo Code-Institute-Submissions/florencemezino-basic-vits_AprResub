@@ -345,7 +345,9 @@ Typeform was used to create the form from "Take the test" option
 Typeform was used as it works with django to handdle the data
 
 13. [Bootstrap starter template](https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template)
-Bootstrap starter template was used to 
+Bootstrap starter template was used to built the website structure
+
+14. [JQuery](https://releases.jquery.com/)
 
 # Testing
 
@@ -449,7 +451,7 @@ The text, images and other data in the database was sourced from various local w
 ## Acknowledgments
 
 - My Mentor Jack Washira for continuous helpful feedback.
-- Tutor support at Code Institute for their support.
+- Tutor support at Code Institute for their great support.
 - Peer to peer support from Code Institute Slack community.
 
 ### Author
