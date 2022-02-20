@@ -326,7 +326,7 @@ Luci app was used to have mindmap and have an overview of the database strategie
 6. [Postgres]() or [MySQL]()
 Relational database (recommending MySQL or Postgres)
 
-7. [Stripe payments](https://stripe.com/docs)
+7. [Stripe general payments documentation ](https://stripe.com/docs) and [Stripe JS](https://stripe.com/docs/payments/accept-a-payment#web-collect-card-details)
 Stripe payments was used to integrate a paid access to the site.
 
 8. [Amazon Web Services AWS / S3]()
@@ -448,8 +448,6 @@ The text, images and other data in the database was sourced from various local w
 - 
 
 * Mentor Session 3: Final Project Review
-
-
 
 
 ## Acknowledgments
