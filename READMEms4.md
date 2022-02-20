@@ -349,6 +349,11 @@ Bootstrap starter template was used to built the website structure
 
 14. [JQuery](https://releases.jquery.com/)
 
+15. [Django-taggit](https://django-taggit.readthedocs.io/en/latest/getting_started.html)
+
+16. [Django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+
+
 # Testing
 
 # Deployment
@@ -409,7 +414,6 @@ The text, images and other data in the database was sourced from various local w
 - Centering brand logo in Bootstrap Navbar [view](https://stackoverflow.com/questions/23400234/centering-brand-logo-in-bootstrap-navbar)
 - Bootstrap spacing [view](https://getbootstrap.com/docs/4.0/utilities/spacing/)
 - Flexbox tutorial -  building a simple layout with Flexbox [view](https://www.youtube.com/watch?v=JqJNhM8i-nc)
-- django-taggit [view](https://django-taggit.readthedocs.io/en/latest/getting_started.html)
 - Django: How can I create a multiple select form? [view](https://stackoverflow.com/questions/15393134/django-how-can-i-create-a-multiple-select-form)
 
 -  DevLabs: Tips on Debugging Errors [view](https://youtu.be/cdo9NfKVHWw)
