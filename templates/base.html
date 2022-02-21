@@ -82,6 +82,13 @@
                         <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
+                                <p class="my-0">
+                                    {% if order %}
+                                        {{ order.full_name }}
+                                    {% else %}
+                                        My Account
+                                    {% endif %}
+                                </p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -101,7 +108,14 @@
                         <a class="nav-link font-weight-bold " href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0"></p>
+                                     <p class="my-0">
+                                        {% if grand_total %}
+                                            €{{ grand_total|floatformat:2 }}
+                                        {% else %}
+                                            €0.00
+                                        {% endif %}
+                                    </p>
+                                </p>
                             </div>
                         </a>
                     </li>
