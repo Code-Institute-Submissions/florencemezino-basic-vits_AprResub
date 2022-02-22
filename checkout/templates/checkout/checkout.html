@@ -41,11 +41,11 @@
                         <div class="col-2 mb-1">
                             {% if product.image %} 
                             <a href="{% url 'product_detail' item.product.id %}">
-                                <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                                <img src="{{ product.image.url }}" class="card-img-top w-100" alt="{{ product.name }}">
                             </a>
                             {% else %}
                             <a href="{% url 'product_detail' item.product.id %}">
-                                <img src="/media/noimage.png" class="card-img-top" alt="{{ product.name }}">
+                                <img src="/media/noimage.png" class="card-img-top w-100" alt="no image">
                                 </a>
                             {% endif %}
                         </div>
@@ -109,6 +109,8 @@
 
                         <!-- Used to display form errors -->
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+                        <!-- Pass the client secret to the view so we can get the payment intent id -->
+                        <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
 
                     <div class="submit-button text-right mt-5 mb-2">                    
