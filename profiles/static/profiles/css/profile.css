@@ -1,4 +1,4 @@
-.profile-background {
+/* .profile-background {
     background:url('/media/login_profile.jpeg') no-repeat center center fixed;
     background-blend-mode: multiply;
     background-size: cover;
@@ -10,4 +10,22 @@
     align-items: center;
     justify-content :center
 
+} */
+
+
+#profile-update-form .form-control {
+    color:#033718;
+}
+
+#profile-update-form input::placeholder {
+    color: #79a185;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #033718;
+}
+
+#id_default_country option:first-child {
+    color: #79a185;
 }
