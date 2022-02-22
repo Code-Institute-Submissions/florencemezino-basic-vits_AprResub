@@ -49,6 +49,17 @@
   object-position:50% 50%;
  }
 
+ select,
+ select option {
+     color: #000000;
+ }
+ 
+ select:invalid,
+ select option[value=""] {
+     color: #aab7c4 !important;
+ }
+
+
 
  /* -------------------------------- Loading */
  #loading-overlay {
