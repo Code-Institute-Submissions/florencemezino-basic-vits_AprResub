@@ -1,0 +1,13 @@
+.profile-background {
+    background:url('/media/login_profile.jpeg') no-repeat center center fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    min-height: 250px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction :column;
+    align-items: center;
+    justify-content :center
+
+}
