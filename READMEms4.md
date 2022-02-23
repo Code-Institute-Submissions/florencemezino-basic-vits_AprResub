@@ -353,6 +353,7 @@ Bootstrap starter template was used to built the website structure
 
 16. [Django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/)
 
+17. [Django widget](https://github.com/django/django/blob/main/django/forms/templates/django/forms/widgets/clearable_file_input.html)
 
 # Testing
 
@@ -410,6 +411,10 @@ The text, images and other data in the database was sourced from various local w
 
 ### Project code ressources
 - Boutique Ado walkthrough project developped by Code Institute for educational purpose [view](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
+Functionnalities used : product, bag, checkout, stripe, email
+Functionnalities used : product management
+
+
 - “bootstrap remove underline from link” Code Answer’s [view](https://www.codegrepper.com/code-examples/whatever/bootstrap+remove+underline+from+link)
 - Centering brand logo in Bootstrap Navbar [view](https://stackoverflow.com/questions/23400234/centering-brand-logo-in-bootstrap-navbar)
 - Bootstrap spacing [view](https://getbootstrap.com/docs/4.0/utilities/spacing/)
