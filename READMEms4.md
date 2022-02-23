@@ -355,6 +355,8 @@ Bootstrap starter template was used to built the website structure
 
 17. [Django widget](https://github.com/django/django/blob/main/django/forms/templates/django/forms/widgets/clearable_file_input.html)
 
+18. [Django Key generator](https://miniwebtool.com/fr/django-secret-key-generator/)
+
 # Testing
 
 # Deployment
