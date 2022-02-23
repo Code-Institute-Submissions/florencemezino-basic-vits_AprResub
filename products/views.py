@@ -4,6 +4,7 @@ from django.db.models import Q
 from taggit.models import Tag
 
 from .models import Product, Category, HealthGoal, Package
+from .forms import ProductForm
 
 # Create your views here.
 
@@ -62,6 +63,16 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+# admin : add product
+def add_product(request):
+    """ Add a product to the store """
+    form = ProductForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
 
 
 
