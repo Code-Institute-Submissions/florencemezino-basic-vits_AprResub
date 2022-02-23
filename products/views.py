@@ -69,9 +69,9 @@ def add_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            product = form.save()
             messages.success(request, 'Successfully added product!')
-            return redirect(reverse('add_product'))
+            return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
@@ -108,36 +108,12 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
+# admin : delete product
 
+def delete_product(request, product_id):
+    """ Delete a product from the store """
+    product = get_object_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, 'Product deleted!')
+    return redirect(reverse('products'))
 
-
-
-# # def all_products_each_category(request):
-# #     """ A view to show all products from each product category, including sorting and search queries """
-#     products = Category.objects.all()
-
-#      context = {
-#         'categories': products,
-#     }
-
-#     return render(request, 'products/categories.html', context)
-
-# # def all_products_each_healthgoal(request):
-# #     """ A view to show all products from each product health goal, including sorting and search queries """
-#     products = HealthGoal.objects.all()
-
-#      context = {
-#         'healthgoals': products,
-#     }
-
-#     return render(request, 'products/healthgoals.html', context)
-
-# # def all_products_each_package(request):
-# #     """ A view to show all products from each product package, including sorting and search queries """
-#     products = Package.objects.all()
-
-#      context = {
-#         'packages': products,
-#     }
-
-#     return render(request, 'products/packages.html', context)

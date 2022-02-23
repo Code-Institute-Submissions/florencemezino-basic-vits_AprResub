@@ -127,6 +127,12 @@
                     {% endif %}
                     <div class="card-body">
                       <h5 class="card-title">{{ product.name }}</h5>
+                      {% if request.user.is_superuser %}
+                      <small class="ml-3">
+                          <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                          <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                      </small>
+                     {% endif %}
                       <p class="card-text">{{ product.description_benefits }}</p>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -135,15 +141,14 @@
                     </ul>
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
-                          <p class="text-muted mb-0">€{{ product.price }}</p>
-                          <a href="{% url 'product_detail' product.id %}">
-                            <button type="button" class="btn btn-sm btn-outline-success">View</button>
-                         </a>
-                          
+                            <p class="text-muted mb-0">€{{ product.price }}</p>
+                            <a href="{% url 'product_detail' product.id %}">
+                                <button type="button" class="btn btn-sm btn-outline-success">View</button>
+                            </a>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                </div>
+             </div>
                   {% if forloop.counter|divisibleby:1 %}
                 <div class="col-12 d-sm-none mb-5">
                     <hr>
