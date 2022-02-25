@@ -364,6 +364,9 @@ Trello was used as a bug tracker for this project
 
 Basic Vits Trello [view](https://trello.com/b/UpMuWmHD/trello-bug-tracking)
 
+21. [Mdn Bootstrap](https://mdbootstrap.com/docs/standard/extended/faq/)
+MDN bootstrap was used to generate a FAQ static section
+
 # Testing
 
 # Deployment
