@@ -1,0 +1,1 @@
+Basic Vits reception of your inquiry {{ contact.contact_number }}
