@@ -368,6 +368,11 @@ input[name='q']::placeholder {
     color: #fff;
 }
 
+.copyright-text {
+    color : #a98a44;
+
+}
+
 .social-icon {
     color : #a98a44;
 }

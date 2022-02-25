@@ -4,7 +4,7 @@ from .models import Product, Category, HealthGoal, Package
 
 class ProductAdmin(admin.ModelAdmin):
     """ product admin docstring """
-    product_tags = ['immunity', 'brain', 'energy', 'eyes', 'sleep', 'stress', 'heart', 'joints', 'skin', 'hair', 'digestion', 'bones', 'shape', 'women_health', 'men_health', 'kids_health', 'teens_health', 'seniors_health',]
+    product_tags = ['immunity', 'brain', 'energy', 'eyes', 'sleep', 'stress', 'heart', 'joints', 'skin', 'hair', 'digestion', 'bones', 'shape', 'summer', 'spring', 'autumn', 'winter',]
     list_display = (
         'sku',
         'name',
