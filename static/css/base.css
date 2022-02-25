@@ -362,7 +362,18 @@ input[name='q']::placeholder {
 }
 
 
+/* -------------------------------- Footer */
 .footer-background {
     background-color:#033718;
     color: #fff;
+}
+
+.social-icon {
+    color : #a98a44;
+}
+
+.social-icon:hover,
+.nav-link:active,
+.nav-linkfocus {
+    color: #FC8D1E;
 }
