@@ -333,6 +333,8 @@ input[name='q']::placeholder {
 
     .nav-link {
         padding: 0.15rem;
+        color :#033718;
+        background-color: #a98a44(89, 43%, 51%, 0.2) 
     }
 
     .nav-link i.fa-lg {
