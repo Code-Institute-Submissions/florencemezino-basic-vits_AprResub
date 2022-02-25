@@ -12,6 +12,8 @@ body {
 
 }
 
+/* -------------------------------- Home */
+
 .hero-home {
     background:url('/media/homepage_background_image.jpeg') no-repeat center center fixed;
     background-blend-mode: multiply;
@@ -37,7 +39,6 @@ body {
 } 
 
 
-
 .icon {
     align-items: center;
     display: inline-flex;
@@ -47,7 +48,7 @@ body {
     color: #a98a44;
 }
 
-/* -------------------------------- Base template */
+/* -------------------------------- Navigation, Buttons, Links */
 
 #topnav {
     position: sticky; 
@@ -108,6 +109,7 @@ body {
 }
 
 
+
 .how-to-title{
     color: #033718;
 }
@@ -128,7 +130,7 @@ input[name='q']::placeholder {
 }
 
 
-/* ------------------------------- bootstrap toasts */
+/* ------------------------------- Bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -198,7 +200,6 @@ input[name='q']::placeholder {
 
 
 /* -------------------------------- Overlay */
-
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -274,8 +275,7 @@ input[name='q']::placeholder {
 }
 
 
-/* Product form */
-
+/* Product form*/
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -316,7 +316,7 @@ input[name='q']::placeholder {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/* navbar collapse on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
@@ -324,5 +324,36 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    .display-4.logo-font {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    .btn.btn-outline-success {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-success.btn-lg,
+    .btn.btn-success.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 }

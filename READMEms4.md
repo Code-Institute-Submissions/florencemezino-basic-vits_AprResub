@@ -323,8 +323,8 @@ Balsamiq was used to create [the wireframes](All Wireframes.pdf) during the desi
 5. [Lucidchart](https://lucid.app/)
 Luci app was used to have mindmap and have an overview of the database strategies and structure
 
-6. [Postgres]() or [MySQL]()
-Relational database (recommending MySQL or Postgres)
+6. [Postgres]()
+Postgres was used as relational database
 
 7. [Stripe general payments documentation ](https://stripe.com/docs) and [Stripe JS](https://stripe.com/docs/payments/accept-a-payment#web-collect-card-details)
 Stripe payments was used to integrate a paid access to the site.
@@ -356,6 +356,13 @@ Bootstrap starter template was used to built the website structure
 17. [Django widget](https://github.com/django/django/blob/main/django/forms/templates/django/forms/widgets/clearable_file_input.html)
 
 18. [Django Key generator](https://miniwebtool.com/fr/django-secret-key-generator/)
+
+19. [Django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+
+20. [Trello](https://trello.com/)
+Trello was used as a bug tracker for this project
+
+Basic Vits Trello [view](https://trello.com/b/UpMuWmHD/trello-bug-tracking)
 
 # Testing
 
@@ -415,6 +422,8 @@ The text, images and other data in the database was sourced from various local w
 - Boutique Ado walkthrough project developped by Code Institute for educational purpose [view](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
 Functionnalities used : product, bag, checkout, stripe, email
 Functionnalities used : product management
+
+Note : In order to set products on Basic Vits site, example of fixtures were created with few example products. 
 
 
 - “bootstrap remove underline from link” Code Answer’s [view](https://www.codegrepper.com/code-examples/whatever/bootstrap+remove+underline+from+link)

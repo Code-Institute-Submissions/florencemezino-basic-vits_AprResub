@@ -3,11 +3,11 @@
 
 {% block page_header %}
 
-<!-- <div class="container header-container">
+<div class="container header-container">
   <div class="row">
       <div class="col"></div>
   </div>
-</div> -->
+</div>
 
 {% endblock %}
 
@@ -69,19 +69,7 @@
         </div>
     </section>
 
-    <!-- <div class="container text-center">
-        <div class="row">
-            <div class="col-12">
-                <h4>
-                    <a href="" class="test-now-button  btn-primary btn-lg py-3">Take the test</a>
-                </h4>
-            </div>
-        </div>
-    </div> -->
-    
-    <!--/.How it works -->
-
-    <!-- Testimonies -->
+    <!-- Reviews -->
     <div class="container">
         <div class="row mb-2">
           <div class="col-md-6">
@@ -96,7 +84,7 @@
                         <li>Magnesium</li>
                         <li>Extra Batteries</li>
                     </ul>
-                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text mb-auto">Review : This is a wider card with supporting text below as a natural lead-in to additional content.</p>
               </div>
               <div class="col-auto d-none d-lg-block">
                 <img class="testimony-picture" src="{{ MEDIA_URL }}testimony-1.jpeg" width = "250" height = "250" alt="a man smiling">
@@ -115,7 +103,7 @@
                         <li>Zinc</li>
                         <li>Probiotic Blend</li>
                     </ul>
-                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <p class="mb-auto">Review : This is a wider card with supporting text below as a natural lead-in to additional content.</p>
               </div>
               <div class="col-auto d-none d-lg-block">
                 <img class="testimony-picture" src="{{ MEDIA_URL }}testimony-2.jpeg" width = "250" height = "250" alt="a woman smiling">
@@ -124,16 +112,16 @@
           </div>
         </div>
     </div>
-   <!--/.Testimonies -->
-
-
+   
    <section class="py-5 text-center container">
     <div class="row py-lg-6">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <a href="" class="test-now-button btn-primary btn-lg py-3">Take the test</a>
-        <a href="{% url 'products' %}" class="shop-now-button btn-primary btn-lg py-3">Shop now</a>
+        <a href="{% url 'products' %}" class="shop-now-button btn-primary btn-lg py-3">Connect with Basic Vits community</a>
       </div>
     </div>
 </section>
+<!--/.Reviews -->
+
+
     
 {% endblock %}
