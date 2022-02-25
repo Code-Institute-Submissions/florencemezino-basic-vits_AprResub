@@ -328,6 +328,7 @@ input[name='q']::placeholder {
 
     .display-4.logo-font {
         font-size: 2rem;
+        position: center;
     }
 
     .nav-link {
