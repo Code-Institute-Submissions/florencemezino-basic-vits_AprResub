@@ -434,7 +434,7 @@ Note : In order to set products on Basic Vits site, example of fixtures were cre
 - Bootstrap spacing [view](https://getbootstrap.com/docs/4.0/utilities/spacing/)
 - Flexbox tutorial -  building a simple layout with Flexbox [view](https://www.youtube.com/watch?v=JqJNhM8i-nc)
 - Django: How can I create a multiple select form? [view](https://stackoverflow.com/questions/15393134/django-how-can-i-create-a-multiple-select-form)
-
+- Build a Contact Form for a Python Django Application with Twilio SendGrid [view](https://www.twilio.com/blog/build-contact-form-python-django-twilio-sendgrid)
 -  DevLabs: Tips on Debugging Errors [view](https://youtu.be/cdo9NfKVHWw)
 
 

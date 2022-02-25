@@ -15,18 +15,20 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <!--Section: FAQ-->
+    <!--FAQ-->
         <div class="container">
             <div class="row">
                 <section>
-                    <h3 class="text-center mb-4 pb-2 text-primary fw-bold">FAQ</h3>
+                    <hr>
+                    <h2 class="logo-font mb-4">FAQ</h2>
+                    <hr>
                     <p class="text-center mb-5">
                     Find the answers for the most frequently asked questions below
                     </p>
                 
                     <div class="row">
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <h6 class="mb-3 text-primary"><i class="far fa-paper-plane text-primary pe-2"></i> How is the payment processed on Basic Vits site?</h6>
+                        <h6 class="mb-3 text-success"><i class="far fa-paper-plane text-primary pe-2"></i> How is the payment processed on Basic Vits site?</h6>
                         <p>
                         We work with Stripe which is our main payment provider which insures safety and security on any payment transactions. 
                          Also all billing information is stored on our payment processing partner. More information about Stripe <a href=""><strong>here</strong></a>
@@ -34,7 +36,7 @@
                     </div>
                 
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <h6 class="mb-3 text-primary"><i class="fas fa-pen-alt text-primary pe-2"></i> Is it possible to cancel my subscription ?</h6>
+                        <h6 class="mb-3 text-success"><i class="fas fa-pen-alt text-primary pe-2"></i> Is it possible to cancel my subscription ?</h6>
                         <p>
                         <strong><u>Yes, it is possible!</u></strong> You can cancel your vitamins subscription anytime. Once the subscription is
                         cancelled, you will not be charged next month. Just send us and email with the contact form below so we can assit you.
@@ -42,7 +44,7 @@
                     </div>
 
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> Can we buy products without being enrolled in a subcription ?
+                        <h6 class="mb-3 text-success"><i class="fas fa-user text-primary pe-2"></i> Can we buy products without being enrolled in a subcription ?
                         </h6>
                         <p>
                             <strong><u>Yes, you can!</u></strong> Currently, we offer the possibility to buy single products or a monthly subscription. You can cancel your monthly
@@ -51,7 +53,7 @@
                     </div>
                 
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <h6 class="mb-3 text-primary"><i class="fas fa-rocket text-primary pe-2"></i> How can I update my contact details for future deliveries ?
+                        <h6 class="mb-3 text-success"><i class="fas fa-rocket text-primary pe-2"></i> How can I update my contact details for future deliveries ?
                         </h6>
                         <p>
                         Login to your account and go to your profile to update your delivery information.
@@ -59,7 +61,7 @@
                     </div>
                 
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <h6 class="mb-3 text-primary"><i class="fas fa-home text-primary pe-2"></i> I did not cancel on time my subcription order, can I get a refund ?
+                        <h6 class="mb-3 text-success"><i class="fas fa-home text-primary pe-2"></i> I did not cancel on time my subcription order, can I get a refund ?
                         </h6>
                         <p>
                          <strong><u>Unfortunately no</u>.</strong> We do not issue full or partial refunds for any reason.
@@ -67,7 +69,7 @@
                     </div>
         
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <h6 class="mb-3 text-primary"><i class="fas fa-book-open text-primary pe-2"></i> I am on a monthly subcription package, how can I get a discount ?</h6>
+                        <h6 class="mb-3 text-success"><i class="fas fa-book-open text-primary pe-2"></i> I am on a monthly subcription package, how can I get a discount ?</h6>
                         <p>
                         For loyal members to Basic Vits vitamins and supplements, discounts are on their way to you<strong><u>Stay tune</u>.</strong> 
                         </p>
@@ -75,7 +77,8 @@
                     </div>
                 </section>
             </div>
-      <!--Section: FAQ-->
+
+        <!--Get in touch-->
         <div class="row">
             <div class="col">
                 <hr>
@@ -87,96 +90,11 @@
             <div class="col">
                 <form action="" method="post">
                     {% csrf_token %}
-                    <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small px-2 w-auto">Contact details</legend>
-                        {{ contact_form.full_name | as_crispy_field }}
-                        {{ contact_form.email | as_crispy_field }}
-                    </fieldset>
-                    <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Your message</legend>
-                        {{ contact_form.message | as_crispy_field }}
-                        <div class="form-check form-check-inline float-right mr-0">
-                            {% if user.is_authenticated %}
-                                <label class="form-check-label" for="id-save-info">If your request is related to an order, provide your order number below</label>
-                                <input class="form-check-input ml-2 mr-0" type="text" id="id-save-info" name="save-info" checked>
-                            {% else %}
-                            {% endif %}
-                        </div>
-                    </fieldset>
-                <button class="btn btn-success float-right">Submit</button>
+                    {{ form|crispy }}
+                    <button class="btn btn-success float-right">Submit</button>
                 </form>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
-
-
-
-
-
-
-
-
-
-
-
-<form action="{% url 'checkout' %}" method="POST" id="payment-form">
-    {% csrf_token %}
-    <fieldset class="rounded px-3 mb-5">
-        <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
-        {{ order_form.full_name | as_crispy_field }}
-        {{ order_form.email | as_crispy_field }}
-    </fieldset>
-    <fieldset class="rounded px-3 mb-5">
-        <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
-        {{ order_form.phone_number | as_crispy_field }}
-        {{ order_form.street_address1 | as_crispy_field }}
-        {{ order_form.street_address2 | as_crispy_field }}
-        {{ order_form.town_or_city | as_crispy_field }}
-        {{ order_form.county | as_crispy_field }}
-        {{ order_form.postcode | as_crispy_field }}
-        {{ order_form.country | as_crispy_field }}
-        <div class="form-check form-check-inline float-right mr-0">
-            {% if user.is_authenticated %}
-                <label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
-                <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
-            {% else %}
-                <label class="form-check-label" for="id-save-info">
-                    <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
-                    <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
-                </label>
-            {% endif %}
-        </div>
-    </fieldset>
-    <fieldset class="px-3">
-        <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
-        <!-- A Stripe card element will go here -->
-        <div class="mb-3" id="card-element"></div>
-
-        <!-- Used to display form errors -->
-        <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
-        <!-- Pass the client secret to the view so we can get the payment intent id -->
-        <input type="hidden" value="{{ client_secret }}" name="client_secret">
-    </fieldset>
-
-    <div class="submit-button text-right mt-5 mb-2">                    
-        <a href="{% url 'view_bag' %}" class="btn btn-outline-success">
-            <span class="icon">
-                <i class="fas fa-chevron-left"></i>
-            </span>
-            <span class="font-weight-bold">Adjust Bag</span>
-        </a>
-        <button id="submit-button" class="btn btn-success">
-            <span class="font-weight-bold">Complete Order</span>
-            <span class="icon">
-                <i class="fas fa-lock"></i>
-            </span>
-        </button>
-        <p class="small text-danger my-0">
-            <span class="icon">
-                <i class="fas fa-exclamation-circle"></i>
-            </span>
-            <span>Your card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
-        </p>
-    </div>
-</form>

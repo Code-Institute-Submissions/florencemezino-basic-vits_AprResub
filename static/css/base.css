@@ -360,3 +360,9 @@ input[name='q']::placeholder {
         padding: .25rem .5rem !important;
     }
 }
+
+
+.footer-background {
+    background-color:#033718;
+    color: #fff;
+}
