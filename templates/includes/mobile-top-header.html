@@ -36,7 +36,7 @@
                 <div class="text-center">
                     {% if request.user.is_authenticated %}
                         <div><i class="fas fa-user fa-lg"></i></div>
-                        {{ user.full_name }}
+                        {{ request.user.get_username }}
                     {% else %}
                     <div><i class="fas fa-user fa-lg"></i></div>
                         My Account
