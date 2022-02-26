@@ -127,8 +127,20 @@ body {
 }
 
 .steps-text{
-    color: #95b094;
+    color: #033718;
 }
+
+
+/* review */
+
+.text-title-review {
+    color:#a98a44;
+}
+
+.persona-title{
+    color: #033718;
+}
+
 
 
 .testimony-picture {
