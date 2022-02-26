@@ -17,8 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from django_typeform import urls as django_typeform_urls
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,6 +27,4 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
     path('contact/', include('contact.urls')),
-    url(r'^review/', include('review.urls')),
-    url(r'^', include(django_typeform_urls)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
