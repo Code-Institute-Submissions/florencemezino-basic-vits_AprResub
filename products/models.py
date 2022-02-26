@@ -52,6 +52,23 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+# OPTION1 
+# class Product(models.Model):
+#     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+#     sku = models.CharField(max_length=254, null=True, blank=True)
+#     name = models.CharField(max_length=254)
+#     description_benefits = models.CharField(max_length=800, null=True, blank=True)
+#     description = RichTextField()
+#     quantity = models.CharField(max_length=254, null=True, blank=True)
+#     price = models.DecimalField(max_digits=6, decimal_places=2)
+#     image = models.ImageField(null=True, blank=True)
+#     product_tags = TaggableManager()
+
+#     def __str__(self):
+#         return self.name
+
+
+
 
 # class Product(models.Model):
 #     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
@@ -70,7 +87,6 @@ class Product(models.Model):
 #         return self.name
 
 
-
 # class Product(models.Model):
 #     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
 #     healthgoal = models.ForeignKey('Healthgoal', on_delete=models.SET_NULL)
@@ -87,20 +103,6 @@ class Product(models.Model):
 #     def __str__(self):
 #         return self.name
 
-
-# class Product(models.Model):
-#     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
-#     sku = models.CharField(max_length=254, null=True, blank=True)
-#     name = models.CharField(max_length=254)
-#     description_benefits = models.CharField(max_length=800, null=True, blank=True)
-#     description = RichTextField()
-#     quantity = models.CharField(max_length=254, null=True, blank=True)
-#     price = models.DecimalField(max_digits=6, decimal_places=2)
-#     image = models.ImageField(null=True, blank=True)
-#     product_tags = TaggableManager()
-
-#     def __str__(self):
-#         return self.name
 
 
 
