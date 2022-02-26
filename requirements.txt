@@ -13,6 +13,7 @@ django-generic-positions==0.2.3
 django-hvad==1.8.0
 django-js-asset==2.0.0
 django-libs==2.0.3
+django-review==1.10.0
 django-storages==1.9.1
 django-taggit==2.1.0
 django-typeform==0.2.0

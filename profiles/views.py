@@ -48,3 +48,25 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+# def review_create(request, order_number):
+#     review_create = get_object_or_404(Order, order_number=order_number)
+
+#     if request.method == 'POST':
+#         review = UserOrderReview(request.POST, instance=review_create)
+#         if review.is_valid():
+#             review.save()
+#             messages.success(request, 'Thank you for your review!')
+#         else:
+#             messages.error(request, 'An error occurred, please try again.')
+#     else:
+#         review = UserOrderReview(instance=review_create)
+#     orders = profile.orders.all()
+
+#     template = 'profiles/profile.html'
+#     context = {
+#         'review': review,
+#         'orders': orders,
+#         'on_profile_page': True
+#     }
+
