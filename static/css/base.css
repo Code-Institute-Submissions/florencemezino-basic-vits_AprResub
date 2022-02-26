@@ -12,6 +12,9 @@ body {
 
 }
 
+.h2{
+    color :#033718;
+}
 /* -------------------------------- Home */
 
 .hero-home {
@@ -32,11 +35,18 @@ body {
     text-align: center;
     display: flex;
     justify-content: space-around;
+    background-color: #95b094;
+    border-radius: 15%;
 }
 
 .subcription-step {
     flex: 0 1 30%;
 } 
+
+.hr {
+    color: #95b094;
+}
+
 
 
 .icon {
@@ -45,7 +55,7 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-    color: #a98a44;
+    color: #FC8D1E;
 }
 
 /* -------------------------------- Navigation, Buttons, Links */
@@ -109,9 +119,15 @@ body {
 }
 
 
+/* steps */
 
-.how-to-title{
+.steps-title{
     color: #033718;
+    font-size: 25px;
+}
+
+.steps-text{
+    color: #95b094;
 }
 
 
@@ -364,17 +380,17 @@ input[name='q']::placeholder {
 
 /* -------------------------------- Footer */
 .footer-background {
-    background-color:#033718;
+    background-color:#88A686;
     color: #fff;
 }
 
 .copyright-text {
-    color : #a98a44;
+    color : #033718;
 
 }
 
 .social-icon {
-    color : #a98a44;
+    color : #033718;
 }
 
 .social-icon:hover,
