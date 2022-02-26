@@ -56,7 +56,6 @@ INSTALLED_APPS = [
     'ckeditor',
     'django_typeform.apps.DjangoTypeformConfig',
 
-
 ]
 
 MIDDLEWARE = [
