@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'storages',
     'ckeditor',
-    'django_typeform.apps.DjangoTypeformConfig',
+    # 'django_typeform.apps.DjangoTypeformConfig',
 
 ]
 
