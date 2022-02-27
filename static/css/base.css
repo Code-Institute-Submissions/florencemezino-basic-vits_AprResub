@@ -30,6 +30,102 @@ body {
     justify-content :center
 }
 
+
+/* how it works timeline */
+
+.timeline-page {
+    padding: 10px 0;
+    position: relative;
+    margin-top: 35px;
+}
+
+.timeline-page::after {
+    content: "";
+    height: 95%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    background-color: #e8e8e8;
+}
+
+.timeline-item {
+    margin-top: 20px;
+    color: #033718;
+}
+
+.timeline-page .timeline-item .date-label-left {
+    text-align: center;
+    margin-right: 20px;
+    position: relative;
+    
+}
+
+.timeline-page .timeline-item .date-label-left::after,
+.timeline-page .timeline-item .duration-right::after {
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    content: "";
+    height: 20px;
+    position: absolute;
+    top: 40px;
+    width: 20px;
+    z-index: 1;
+}
+
+.timeline-page .timeline-item .date-label-left::after {
+    right: -45px;
+}
+
+.timeline-page .timeline-item .duration-right::after {
+    left: -45px;
+}
+
+.timeline-page .timeline-item .works-description-right {
+    text-align: center;
+    margin-left: 15px;
+    float: left;
+    border-radius: 0;
+    padding: 20px 0;
+}
+
+.timeline-page .timeline-item .duration-right {
+    text-align: center;
+    margin-left: 20px;
+    position: relative;
+}
+
+.timeline-page .timeline-item .works-description-left {
+    text-align: right;
+    margin-right: 15px;
+    float: right;
+    border-radius: 0;
+    padding: 20px 0;
+}
+
+.timeline-page h4,
+.works-description-left h4 {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+
+.bg-custom, .btn-custom, .timeline-page .timeline-item .date-label-left::after, .timeline-page .timeline-item .duration-right::after, .back-to-top:hover {
+    background-color: #FC8D1E;
+}
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #FC8D1E;
+}
+
+/* TBD */
 .subcription-steps {
     padding: 12vh 0;
     text-align: center;
@@ -43,20 +139,12 @@ body {
     flex: 0 1 30%;
 } 
 
-.hr {
-    color: #95b094;
-}
+.subcription-step {
+    flex: 0 1 30%;
+} 
 
 
 
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
-    color: #FC8D1E;
-}
 
 /* -------------------------------- Navigation, Buttons, Links */
 
@@ -118,17 +206,6 @@ body {
     text-decoration: none;
 }
 
-
-/* steps */
-
-.steps-title{
-    color: #033718;
-    font-size: 25px;
-}
-
-.steps-text{
-    color: #033718;
-}
 
 
 /* review */
