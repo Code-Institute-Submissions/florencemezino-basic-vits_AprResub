@@ -2,24 +2,16 @@
 {% load static %}
 
 {% block page_header %}
-
-<div class="container header-container">
-  <div class="row">
-      <div class="col"></div>
-  </div>
-</div>
-
 {% endblock %}
 
 {% block content %}
 
   <!--Hero image -->
-  <header class="container-fluid text-center h-100 header-container ">
-    <div class="row ">
+  <header class="container-fluid text-center h-100">
+    <div class="row h-100 ">
         <div class="col-12 hero-home ">
             <div class="mt-5 text-center ">
                 <a href="" class="test-now-button btn-lg text-uppercase py-3">Take the Test</a>
-                
                 <a href="{% url 'products' %}" class="button btn-lg text-uppercase py-3">Shop now</a>
             </div>
         </div>
@@ -33,7 +25,8 @@
           <hr>
           <h2 class="fw-light">How it works</h2>
           <hr>
-          <p class="lead text-muted">Need some help to know what you need ? You can go straight to our shop or discover and subscribe to your monthly customized vitamins routine.</p>
+          <p class="lead text-muted">Need some help to know what you need ? Take the test and discover your monthly customized vitamins routine for free. 
+            You can also directly get your vitamins and supplements from our shop.</p>
       </div>
   </div>
   <div class="timeline-page mt-5">
@@ -108,23 +101,21 @@
 </section> 
 
 
-
-
-<!-- Subcription reviews examples  -->
+<!-- Subcription testimonies -->
   <section class="py-5 text-center container-fluid">
     <div class="row py-lg-3">
       <div class="col-lg-6 col-md-8 mx-auto">
         <hr>
-        <h2 class="fw-light">Connect</h2>
+        <h2 class="fw-light">Join Basic Vits community</h2>
         <hr>
           <p>
-            <p class="lead text-muted">Time to pivot ! Share your personal vitamin plan with the Basic Vits community and help others to evolve to a better self.</p>
+            <p class="lead text-muted">Share your personal vitamin plan with the Basic Vits community and help each others evolve to your best self</p>
           </p>
       </div>
     </div>
   </section>
 
-    <div class="container">
+    <section class="container py-5 ">
         <div class="row mb-2">
           <div class="col-sm-6">
             <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 ms-4 shadow-sm h-md-150 position-relative">
@@ -141,7 +132,7 @@
                 <p class="card-text mb-auto">Luke’s daughter keeps him busy, and he gives his best each time they play basket-ball together.</p>
               </div>
               <div class="col-auto d-none d-lg-block">
-                <img class="testimony-picture" src="{{ MEDIA_URL }}testimony-1.jpeg" width = "250" height = "250" alt="a man smiling">
+                <img class="testimony-picture mt-5 mr-3" src="{{ MEDIA_URL }}testimony-1.jpeg" width = "250" height = "250" alt="a man smiling">
               </div>
             </div>
           </div>
@@ -160,17 +151,18 @@
                 <p class="mb-auto">Lucie is always on the go to dicover the world and give herself 100 % when sharing with the people around her.</p>
               </div>
               <div class="col-auto d-none d-lg-block">
-                <img class="testimony-picture" src="{{ MEDIA_URL }}testimony-2.jpeg" width = "250" height = "250" alt="a woman smiling">
+                <img class="testimony-picture mt-5 mr-3" src="{{ MEDIA_URL }}testimony-2.jpeg" width = "250" height = "250" alt="a woman smiling">
               </div>
             </div>
           </div>
         </div>
-    </div>
+  </section>
+
    
    <section class="py-5 text-center container">
     <div class="row py-lg-6">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <a href="{% url 'products' %}" class="button btn-lg text-uppercase py-3">Connect with Basic Vits community</a>
+      <div class="col-lg-12 col-md-8 mx-auto">
+        <a href="{% url 'products' %}" class="button btn-lg text-uppercase py-3">Share your experience</a>
       </div>
     </div>
 </section>

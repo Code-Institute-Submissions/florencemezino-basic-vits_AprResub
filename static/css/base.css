@@ -456,12 +456,12 @@ input[name='q']::placeholder {
         font-size: 1rem;
     }
 
-    .btn.btn-outline-success {
+    .btn.btn-outline-secondary {
         padding: .375rem .375rem;
     }
 
-    .btn.btn-outline-success.btn-lg,
-    .btn.btn-success.btn-lg {
+    .btn.btn-outline-secondary.btn-lg,
+    .btn.btn-secondary.btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
