@@ -4,3 +4,32 @@ input[type=text], input[type=email], textarea {
     margin: 8px 0;
     display: inline-block;
    }
+
+.title-section{
+    color :#a98a44;
+
+}
+
+.faq-title{
+    color: #95b094;
+}
+
+.faq-text {
+    color: #033718;
+}
+
+.button {
+    background: #033718;
+    color: white;
+    border-style: dashed;
+    min-width: 260px;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+    background: #95b094;
+    color:  white;
+    border-style: dashed;
+    text-decoration: none;
+}

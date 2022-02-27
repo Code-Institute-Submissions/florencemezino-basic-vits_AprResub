@@ -1,54 +1,62 @@
-    <ul class= "navbar-nav mx-auto ">
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="all-categories-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Category
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?category=vitamins" class="dropdown-item">Vitamins</a>
-                <a href="{% url 'products' %}?category=minerals" class="dropdown-item ">Minerals</a>
-                <a href="{% url 'products' %}?category=plants" class="dropdown-item ">Plants</a>
-                <a href="{% url 'products' %}?category=specialities" class="dropdown-item ">Specialities</a>
-                <a href="{% url 'products' %}?category=merchandises" class="dropdown-item ">Merchandises</a>
-                <a href="{% url 'products' %}?category=vitamins,minerals,plants,specialities,merchandises" class="dropdown-item ">All products</a>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Health Goal
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?healthgoal=immunity" class="dropdown-item">Immunity</a>
-                <a href="{% url 'products' %}?healthgoal=brain" class="dropdown-item">Brain</a>
-                <a href="{% url 'products' %}?healthgoal=energy" class="dropdown-item ">Energy</a>
-                <a href="{% url 'products' %}?healthgoal=eyes" class="dropdown-item ">Eyes</a>
-                <a href="{% url 'products' %}?healthgoal=sleep" class="dropdown-item ">Sleep</a>
-                <a href="{% url 'products' %}?healthgoal=stress" class="dropdown-item ">Stress</a>
-                <a href="{% url 'products' %}?healthgoal=heart" class="dropdown-item">Heart</a>
-                <a href="{% url 'products' %}?healthgoal=joints" class="dropdown-item ">Joints</a>
-                <a href="{% url 'products' %}?healthgoal=skin" class="dropdown-item ">Skin</a>
-                <a href="{% url 'products' %}?healthgoal=hair" class="dropdown-item ">Hair</a>
-                <a href="{% url 'products' %}?healthgoal=digestion" class="dropdown-item ">Digestion</a>
-                <a href="{% url 'products' %}?healthgoal=bones" class="dropdown-item ">Bones</a>
-                <a href="{% url 'products' %}?healthgoal=shape" class="dropdown-item ">Shape</a>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Package
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?package=summer" class="dropdown-item">Summer</a>
-                <a href="{% url 'products' %}?package=spring" class="dropdown-item ">Spring</a>
-                <a href="{% url 'products' %}?package=autumn" class="dropdown-item ">Autumn</a>
-                <a href="{% url 'products' %}?package=winter" class="dropdown-item">Winter</a>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Subscription
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">Take the test</a>
-            </div>
-        </li>
-    </ul>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <ul class= "navbar-nav mx-auto align-item-center ">
+                    <li class="nav-item dropdown">
+                        <a class="logo-font font-weight-bold mr-5 nav-link" href="#" id="all-categories-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Category
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                            <a href="{% url 'products' %}?category=vitamins" class="dropdown-item">Vitamins</a>
+                            <a href="{% url 'products' %}?category=minerals" class="dropdown-item ">Minerals</a>
+                            <a href="{% url 'products' %}?category=plants" class="dropdown-item ">Plants</a>
+                            <a href="{% url 'products' %}?category=specialities" class="dropdown-item ">Specialities</a>
+                            <a href="{% url 'products' %}?category=merchandises" class="dropdown-item ">Merchandises</a>
+                            <a href="{% url 'products' %}?category=vitamins,minerals,plants,specialities,merchandises" class="dropdown-item ">All products</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Health Goal
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                            <a href="{% url 'products' %}?healthgoal=immunity" class="dropdown-item">Immunity</a>
+                            <a href="{% url 'products' %}?healthgoal=brain" class="dropdown-item">Brain</a>
+                            <a href="{% url 'products' %}?healthgoal=energy" class="dropdown-item ">Energy</a>
+                            <a href="{% url 'products' %}?healthgoal=eyes" class="dropdown-item ">Eyes</a>
+                            <a href="{% url 'products' %}?healthgoal=sleep" class="dropdown-item ">Sleep</a>
+                            <a href="{% url 'products' %}?healthgoal=stress" class="dropdown-item ">Stress</a>
+                            <a href="{% url 'products' %}?healthgoal=heart" class="dropdown-item">Heart</a>
+                            <a href="{% url 'products' %}?healthgoal=joints" class="dropdown-item ">Joints</a>
+                            <a href="{% url 'products' %}?healthgoal=skin" class="dropdown-item ">Skin</a>
+                            <a href="{% url 'products' %}?healthgoal=hair" class="dropdown-item ">Hair</a>
+                            <a href="{% url 'products' %}?healthgoal=digestion" class="dropdown-item ">Digestion</a>
+                            <a href="{% url 'products' %}?healthgoal=bones" class="dropdown-item ">Bones</a>
+                            <a href="{% url 'products' %}?healthgoal=shape" class="dropdown-item ">Shape</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Package
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                            <a href="{% url 'products' %}?package=summer" class="dropdown-item">Summer</a>
+                            <a href="{% url 'products' %}?package=spring" class="dropdown-item ">Spring</a>
+                            <a href="{% url 'products' %}?package=autumn" class="dropdown-item ">Autumn</a>
+                            <a href="{% url 'products' %}?package=winter" class="dropdown-item">Winter</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Subscription
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                            <a href="" class="dropdown-item">Take the test</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

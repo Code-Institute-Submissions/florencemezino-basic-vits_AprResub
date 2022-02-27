@@ -34,3 +34,19 @@
 #id_default_country option:first-child {
     color: #79a185;
 }
+
+.button {
+    background: #033718;
+    color: white;
+    border-style: dashed;
+    min-width: 260px;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+    background: #95b094;
+    color:  white;
+    border-style: dashed;
+    text-decoration: none;
+}

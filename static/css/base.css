@@ -5,14 +5,14 @@ html {
 }
 
 body {
-    color: #333;
+    color: #033718;
     font-size: 18px;
     font-family: 'Lora', sans-serif;
     margin: 0;
 
 }
 
-.h2{
+.title-section{
     color :#033718;
 }
 /* -------------------------------- Home */
@@ -54,6 +54,7 @@ body {
 .timeline-item {
     margin-top: 20px;
     color: #033718;
+    font-size: 20px;
 }
 
 .timeline-page .timeline-item .date-label-left {
@@ -107,7 +108,7 @@ body {
 
 .timeline-page h4,
 .works-description-left h4 {
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 0;
 }
 
@@ -181,31 +182,35 @@ body {
 .test-now-button {
     background: #FC8D1E;
     color: white;
+    border-style: dashed;
     min-width: 260px;
 }
 
 .test-now-button:hover,
 .test-now-button:active,
 .test-now-button:focus {
-    background: #a98a44;
+    background: #f0bb2a;
     color: white;
+    border-style: dashed;
     text-decoration: none;
 }
 
-.shop-now-button {
+
+.button {
     background: #033718;
     color: white;
+    border-style: dashed;
     min-width: 260px;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus {
-    background: #a98a44;
-    color: white;
+.button:hover,
+.button:active,
+.button:focus {
+    background: #95b094;
+    color:  white;
+    border-style: dashed;
     text-decoration: none;
 }
-
 
 
 /* review */
@@ -219,7 +224,6 @@ body {
 }
 
 
-
 .testimony-picture {
     border-radius: 5%;
 }
@@ -229,6 +233,7 @@ body {
     cursor: pointer;
 }
 
+/* search bar */
 
 input[name='q']::placeholder {
     color: #aab7c4;
