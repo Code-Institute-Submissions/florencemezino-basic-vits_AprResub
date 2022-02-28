@@ -50,3 +50,7 @@
     border-style: dashed;
     text-decoration: none;
 }
+
+.bg-title {
+    background: rgba(240,187,42,0.5);
+}

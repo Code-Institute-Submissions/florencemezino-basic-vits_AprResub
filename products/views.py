@@ -32,7 +32,7 @@ def all_products(request):
         if 'package' in request.GET:
             packages = request.GET['package'].split(',')
             products = products.filter(package__name__in=packages)
-            packages = Package.objects.filter(name__in=['women_health', 'men_health', 'kids_health', 'teens_health', 'seniors_health'])
+            packages = Package.objects.filter(name__in=['summer', 'spring', 'autumn', 'winter'])
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -40,7 +40,7 @@ def all_products(request):
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description_benefits__icontains=query) | Q(healthgoal__icontains=query) | Q(package__icontains=query)
+            queries = Q(name__icontains=query) | Q(description_benefits__icontains=query) | Q(healthgoal__icontains=query) | Q(package__icontains=query) # added every filter
             products = products.filter(queries)
 
     context = {

@@ -338,11 +338,10 @@ Django was used to develop a database-driven site.
 10. [DrawSQL](https://drawsql.app/)
 DrawSQL was used to mind mad the data structure
 
-11. [Typefom](https://admin.typeform.com/form/tHZkFFBU/create?block=01FV0JRD39249A4AT0DMS9BRVD)
-Typeform was used to create the form from "Take the test" option
+11. [Bootstrap 4 multiple choice questions quiz template](https://bbbootstrap.com/similar/bootstrap-mcq-quiz-online-test-template-83992612)
+Bootstrap 4 was used to create the form from "Take the test" option
 
-12. [Typeform Django integration](https://pypi.org/project/django-typeform/)
-Typeform was used as it works with django to handdle the data
+12. 
 
 13. [Bootstrap starter template](https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template)
 Bootstrap starter template was used to built the website structure
@@ -366,6 +365,8 @@ Basic Vits Trello [view](https://trello.com/b/UpMuWmHD/trello-bug-tracking)
 
 21. [Mdn Bootstrap](https://mdbootstrap.com/docs/standard/extended/faq/)
 MDN bootstrap was used to generate a FAQ static section
+
+
 
 # Testing
 
@@ -428,7 +429,6 @@ Functionnalities used : product management
 
 Note : In order to set products on Basic Vits site, example of fixtures were created with few example products. 
 
-
 - “bootstrap remove underline from link” Code Answer’s [view](https://www.codegrepper.com/code-examples/whatever/bootstrap+remove+underline+from+link)
 - Centering brand logo in Bootstrap Navbar [view](https://stackoverflow.com/questions/23400234/centering-brand-logo-in-bootstrap-navbar)
 - Bootstrap spacing [view](https://getbootstrap.com/docs/4.0/utilities/spacing/)
@@ -438,6 +438,10 @@ Note : In order to set products on Basic Vits site, example of fixtures were cre
 - DevLabs: Tips on Debugging Errors [view](https://youtu.be/cdo9NfKVHWw)
 - Bootstrap snippet. bs4 how it works page [view](https://www.bootdey.com/snippets/view/bs4-how-it-works-page#html)
 - Bootstrap snippet. bs4 Ratings and Reviews page [view](https://www.bootdey.com/snippets/view/bs4-Ratings-and-Reviews-page#html)
+- Typefom [view](https://admin.typeform.com/form/tHZkFFBU/create?block=01FV0JRD39249A4AT0DMS9BRVD)
+- Typeform Django integration [view](https://pypi.org/project/django-typeform/)
+- How to Create a Quiz Web Application with Python Django [view](https://data-flair.training/blogs/create-quiz-application-python-django/)
+
 
 ### Readme.md inspiration models 
 - Love running [view](https://github.com/Code-Institute-Solutions/readme-template#readme)

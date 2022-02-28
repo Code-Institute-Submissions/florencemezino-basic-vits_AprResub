@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-<!-- {% load review_tags %} -->
+{% load review_tags %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
@@ -18,7 +18,7 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col bg-title">
                 <hr>
                 <h2 class="logo-font mb-4">My Profile</h2>
                 <hr>
@@ -72,14 +72,14 @@
                                             <i class="fas fa-shopping-bag"></i>
                                         </a>
                                     </td>
-                                    <!-- {% user_has_reviewed myobject request.user as has_reviewed %}
+                                    {% user_has_reviewed myobject request.user as has_reviewed %}
                                     <td>{% if has_reviewed %}}</td>
                                     <td>
                                         <p>Thanks for your opinion!</p>
                                         {% else %}
                                             <a href="{% url 'review_create' content_type='order' object_id=order.pk %}">{% trans "Review this order" %}</a>
                                         {% endif %}
-                                    </td> -->
+                                    </td>
                                 </tr>
                             {% endfor %}
                         </tbody>

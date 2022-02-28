@@ -144,7 +144,9 @@ body {
     flex: 0 1 30%;
 } 
 
-
+.bg-title {
+    background: rgba(240,187,42,0.5);
+}
 
 
 /* -------------------------------- Navigation, Buttons, Links */
@@ -189,7 +191,7 @@ body {
 .test-now-button:hover,
 .test-now-button:active,
 .test-now-button:focus {
-    background: #f0bb2a;
+    background: rgba(240,187,42,0.5);
     color: white;
     border-style: dashed;
     text-decoration: none;
@@ -206,7 +208,7 @@ body {
 .button:hover,
 .button:active,
 .button:focus {
-    background: #95b094;
+    background: rgba(149,176,148,0.5);
     color:  white;
     border-style: dashed;
     text-decoration: none;

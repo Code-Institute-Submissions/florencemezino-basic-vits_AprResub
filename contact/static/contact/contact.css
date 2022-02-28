@@ -8,7 +8,6 @@ input[type=text], input[type=email], textarea {
 .title-section{
     color :#a98a44;
     font-weight: bold;
-
 }
 
 .faq-title{
@@ -33,4 +32,8 @@ input[type=text], input[type=email], textarea {
     color:  white;
     border-style: dashed;
     text-decoration: none;
+}
+
+.bg-title {
+    background: rgba(240,187,42,0.5);
 }
