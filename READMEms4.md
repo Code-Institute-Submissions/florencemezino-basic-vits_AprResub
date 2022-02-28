@@ -441,7 +441,8 @@ Note : In order to set products on Basic Vits site, example of fixtures were cre
 - Typefom [view](https://admin.typeform.com/form/tHZkFFBU/create?block=01FV0JRD39249A4AT0DMS9BRVD)
 - Typeform Django integration [view](https://pypi.org/project/django-typeform/)
 - How to Create a Quiz Web Application with Python Django [view](https://data-flair.training/blogs/create-quiz-application-python-django/)
-
+- Float image in center [view](https://stackoverflow.com/questions/34908332/float-image-in-center)
+- Transparent CSS background color [view](https://stackoverflow.com/questions/11184117/transparent-css-background-color)
 
 ### Readme.md inspiration models 
 - Love running [view](https://github.com/Code-Institute-Solutions/readme-template#readme)

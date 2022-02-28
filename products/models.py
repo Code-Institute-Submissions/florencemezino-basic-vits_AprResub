@@ -37,18 +37,36 @@ class Package(models.Model):
         return self.friendly_name
 
 
+
 class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
-    healthgoal = models.ManyToManyField('HealthGoal', null=True, blank=True, on_delete=models.SET_NULL) # on_delete ?
-    package = models.ForeignKey('Package', null=True, blank=True, on_delete=models.SET_NULL) # on_delete ?
-    sku = models.CharField(max_length=254, null=True, blank=True)
+    healthgoal = models.ForeignKey('HealthGoal', null=True, blank=True, on_delete=models.SET_NULL) 
+    package = models.ForeignKey('Package', null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=254)
-    description_benefits = models.RichTextField() # menu bar in text field to add bulletpoint?
+    description_benefits = models.CharField(max_length=800)
+    style = RichTextField(null=True, blank=True) 
     quantity = models.TextField(null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
-    product_tags = TaggableManager() #initially healthgoal only (attach healthgoal + package as tag in admin)
+    healthgoal = TaggableManager()
 
     def __str__(self):
         return self.name
+
+
+# class Product(models.Model):
+#     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+#     healthgoal = models.ForeignKey('HealthGoal', null=True, blank=True, on_delete=models.SET_NULL) 
+#     package = models.ForeignKey('Package', null=True, blank=True, on_delete=models.SET_NULL) 
+#     sku = models.CharField(max_length=254, null=True, blank=True)
+#     name = models.CharField(max_length=254)
+#     description_benefits = models.CharField(max_length=800)
+#     style = RichTextField(null=True, blank=True) 
+#     quantity = models.TextField(null=True, blank=True)
+#     price = models.DecimalField(max_digits=6, decimal_places=2)
+#     image = models.ImageField(null=True, blank=True)
+#     # product_tags = TaggableManager()
+
+#     def __str__(self):
+#         return self.name
 
