@@ -110,13 +110,13 @@
         <h2 class="fw-light">Join Basic Vits community</h2>
         <hr>
           <p>
-            <p class="lead text-muted">Share your personal vitamin plan with the Basic Vits community and help each others evolve to your best self</p>
+            <p class="lead text-muted">Share your experience with the Basic Vits community. Leave product review and help each others evolve to a best self. Every registered member gets free delivery for orders above 20 euros.</p>
           </p>
       </div>
     </div>
   </section>
 
-    <section class="container py-5 ">
+    <section class="container py-5 text-left ">
         <div class="row mb-2">
           <div class="col-md-6">
             <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 ms-4 shadow-sm h-md-150 position-relative">
@@ -158,13 +158,17 @@
           </div>
         </div>
   </section>
-
-   
-   <section class="py-5 text-center container">
-    <div class="row py-lg-6">
-      <div class="col-lg-12 col-md-8 mx-auto">
-        <a href="{% url 'products' %}" class="button btn-lg text-uppercase py-3">Share your experience</a>
+  
+  <section class="py-5 text-center container-fluid">
+    {% if user.is_authenticated %}
+    <div class="row py-lg-3">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <a class="button btn-lg text-uppercase py-3" href="{% url 'account_signup' %}">My Account</a>  
+        {% else %} 
+        <a class="button btn-lg text-uppercase py-3" href="{% url 'account_signup' %}">Register</a>   
       </div>
     </div>
-</section>
+  </section>
+  {% endif %}
+
 {% endblock %}

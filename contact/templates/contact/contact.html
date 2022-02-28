@@ -77,26 +77,27 @@
                     </div>
                 </section>
             </div>
+        </div>
 
-        <!--Get in touch-->
+    <!--Get in touch-->
+    <div class="container">
         <div class="row ">
             <div class="col-md-6">
                 <hr>
-                <h2 class="logo-font mb-4">Get in touch</h2>
+                <h2 class="logo-font mb-4 text-center">Get in touch</h2>
                 <hr>
-                <p class="lead text-muted text-left mb-5">
-                    For any questions you may have, feel free to send us an email using the form below. If you request is related to an order / subcription please provide your order number.
+                <p class="lead text-muted text-center mb-5">
+                    For any questions you may have, feel free to reach out. If your request is related to an order / subcription please provide your order number.
                 </p>
+                <img src="{{MEDIA_URL}}contact_image.png" style="display:block; margin-left: auto; margin-right: auto; border-radius: 2%;" width = "400" height = "400" alt="a leaf">
             </div>
-        </div>
-        <div class="row">
             <div class="col-md-6">
-                <form action="" method="post" class="title-section">
+                <form action="{% url 'contact_view' %}" method="post" class="title-section">
                     {% csrf_token %}
                     {{ form|crispy }}
-                    <button class="btn button text-uppercase float-right">Submit</button>
+                    <button class="btn button text-uppercase center" style="display:block; margin-left: auto; margin-right: auto;">Submit</button>
                 </form>
-            </div>
+            </div> 
         </div>
     </div>
 

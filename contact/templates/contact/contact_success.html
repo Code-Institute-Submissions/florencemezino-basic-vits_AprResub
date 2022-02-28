@@ -17,12 +17,22 @@
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col-12">
             <hr>
-            <h2 class="logo-font mb-4">Thank you {{ contact.full_name }} for your message</h2>
+            <h2 class="logo-font mb-4 text-center">Thank you {{ contact.full_name }} for your message</h2>
             <hr>
-            <p class="text-black">Your contact information and message was successfully submitted. Our team aime to reply you within one working day.</p>
+            <p class="text-center">Your contact information and message was successfully submitted. Our team aime to reply you within one working day.</p>
         </div>
     </div>
 </div>
+
+<section class="py-5 text-center container">
+    <div class="row">
+      <div class="col-12">
+        <a class="button btn-lg text-uppercase py-3" href="{% url 'contact_view' %}">Help Center</a>  
+        <a class="button btn-lg text-uppercase py-3" href="{% url 'products' %}">Shop</a>   
+      </div>
+    </div>
+  </section>
+
 {% endblock %}
