@@ -64,7 +64,7 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
-# admin : add product
+
 @login_required
 def add_product(request):
     """ Add a product to the store """
@@ -90,7 +90,7 @@ def add_product(request):
 
     return render(request, template, context)
 
-# admin : edit product
+
 @login_required
 def edit_product(request, product_id):
     """ Edit a product in the store """
@@ -119,7 +119,7 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
-# admin : delete product
+
 @login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """

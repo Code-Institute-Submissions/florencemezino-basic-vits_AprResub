@@ -30,8 +30,13 @@
     <div class="d-flex align-items-center pt-3">
         <div id="prev"> <button class="btn btn-primary"></button>Cancel</div>
         <div class="ml-auto mr-sm-5"> 
+          {% if user.is_authenticated %}
+            <a class="button btn-lg text-uppercase py-3" href="{% url 'account_signup' %}">Register</a>
+            {% else %} 
+            <a class="button btn-success text-uppercase py-3" href="{% url 'profile' %}">Save in My Account</a>  
+            {% endif %}   
             <!-- <button class="btn btn-success text-uppercase">Save in profile</button>  -->
-            <a href="{% url 'profiles' %}" class="btn btn-success text-uppercase">Save in profile</a>
+            <!-- <a href="{% url 'profile' %}" class="btn btn-success text-uppercase">Save in profile</a> -->
         </div>
 
     </div>
