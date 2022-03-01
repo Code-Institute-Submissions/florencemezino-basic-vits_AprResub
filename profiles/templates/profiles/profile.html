@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-{% load review_tags %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
@@ -18,16 +17,18 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col bg-title">
-                <hr>
-                <h2 class="logo-font mb-4">My Profile</h2>
-                <hr>
+            <div class="col">
+                <div class="bg-title">
+                    <hr>
+                    <h2 class="logo-font text-center mb-4">My Profile</h2>
+                    <hr>
+                </div>
             </div>
         </div>
     <!-- User delivery information + order history -->
         <div class="row">
             <div class="col-12 col-lg-6">
-                <p class="text-muted">Default Delivery Information</p>
+                <p class="lead text-muted text-center mt-5 mb-5">Delivery Information</p>
                 <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
@@ -35,7 +36,7 @@
                 </form>
             </div>
             <div class="col-12 col-lg-6">
-                <p class="text-muted">Order History</p>
+                <p class="lead text-muted text-center mt-5 mb-5">Order History</p>
                 <div class="order-history table-responsive">
                     <table class="table table-sm table-borderless">
                         <thead>
@@ -44,7 +45,6 @@
                                 <th>Date</th>
                                 <th>Items</th>
                                 <th>Order Total</th>
-                                <th>Review order</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -67,20 +67,6 @@
                                         </ul>
                                     </td>
                                     <td>€{{ order.grand_total }}</td>
-                                    <td>
-                                        <span class="icon mr-2"></span>
-                                        <a href="{% url 'products' %}" class="btn button text-uppercase">
-                                            <i class="fas fa-shopping-bag"></i>
-                                        </a>
-                                    </td>
-                                    {% user_has_reviewed myobject request.user as has_reviewed %}
-                                    <td>{% if has_reviewed %}}</td>
-                                    <td>
-                                        <p>Thanks for your opinion!</p>
-                                        {% else %}
-                                            <a href="{% url 'review_create' content_type='order' object_id=order.pk %}">{% trans "Review this order" %}</a>
-                                        {% endif %}
-                                    </td>
                                 </tr>
                             {% endfor %}
                         </tbody>
@@ -89,16 +75,63 @@
             </div>
         </div>
         <!--/. User delivery information + order history -->
-
-        <!-- Quiz result -->
+        <hr class="mt-5">
+        <!-- User product review -->
         <div class="row">
-            <div class="col-12 col-lg-6">
-                <p class="text-muted">Your Health Goal</p>
-            {{ user.healthgoalscore}}
+            <div class="col-12 col-lg-6 text-center">
+                <p class="lead text-muted text-center mt-5 mb-5">Your Product Reviews</p>
+                <div class="order-history table-responsive">
+                    <table class="table table-sm table-borderless">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Product</th>
+                                <th>Comment</th>
+                                <th>Update</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for review in reviews %}
+                                <tr>
+                                    <td>{{ review.date }}</td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            {% for item in review.lineitems.all %}
+                                                <li class="small">
+                                                    {{ item.product.name }}
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <a href="{% url 'order_history' order.order_number %}"
+                                        title="{{ order.order_number }}">
+                                            {{ review.review_comment }}
+                                        </a>
+                                    </td>
+                                    <td>edit and delete</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                        <a href="{% url 'products' %}" class="btn button text-uppercase text-center mt-5">Review products</a>
+                </div> 
+            </div>
+
+            
+        <!-- /. User product review -->  
+
+        <!-- /. CTA shop more -->
+            <div class="col-12 col-lg-6 text-center">
+                <p class="lead text-muted text-center mt-5 mb-5">Time to renew your vitamins supply</p>
+                <p>If you need advise about what should be your next vitamins and supplements intake you can reach out our nutrionnist experts via the help center. Meanwhile Feel free to explore our products specialities in our shop. </p>
+                <span class="icon mr-2"></span>
+                <a href="{% url 'products' %}" class="btn button text-uppercase text-center mt-5">Shop now</a>
             </div>
         </div>
-        <!-- /. Quiz result -->
+        <!-- /. CTA shop more -->
     </div>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
