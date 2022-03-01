@@ -196,12 +196,19 @@
         </div>
         <div class="row">
             <div class="col-12 mt-5 text-center ">
+                {% csrf_token %}
                 {% if from_profile %}
+                <a href="{% url 'products' %}" class="btn button text-uppercase my-2">
+					<span class="icon mr-2">
+						<i class="fas fa-gifts"></i>
+					</span>
+					<span class="text-uppercase">Explore new specialities</span>
+				</a>
                 <a href="{% url 'profile' %}" class="btn button my-2">
 					<span class="icon mr-2">
 						<i class="fas fa-user"></i>
 					</span>
-					<span class="text-uppercase">Back to Profile</span>
+					<span class="text-uppercase">Go to Profile</span>
 				</a>
                 {% else %}
                 <a href="{% url 'products' %}" class="btn button text-uppercase my-2">
@@ -210,11 +217,11 @@
 					</span>
 					<span class="text-uppercase">Explore new specialities</span>
 				</a>
-				<a href="{% url 'products' %}" class="btn button text-uppercase my-2">
+                <a href="{% url 'profile' %}" class="btn button my-2">
 					<span class="icon mr-2">
-						<i class="fas fa-users"></i>
+						<i class="fas fa-user"></i>
 					</span>
-					<span class="text-uppercase">Connect with Basic Vits community</span>
+					<span class="text-uppercase">Go to Profile</span>
 				</a>
                 {% endif %}
             </div>

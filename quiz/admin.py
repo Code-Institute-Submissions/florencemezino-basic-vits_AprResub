@@ -1,7 +1,6 @@
 from django.contrib import admin
 from .models import Question
- 
-# Register your models here.
+
 
 class QuizAdmin(admin.ModelAdmin):
     """ quiz admin docstring """
@@ -24,9 +23,9 @@ class QuizAdmin(admin.ModelAdmin):
         'option13',
         'option14',
         'option15',
-        'option_text',
     )
 
     ordering = ('question_name',)
+
 
 admin.site.register(Question, QuizAdmin)

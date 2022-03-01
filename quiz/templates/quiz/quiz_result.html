@@ -24,8 +24,8 @@
 <!-- Save health goal-->
 <div class="container mt-sm-5 my-1 quiz-hero-home">
     <div class="question ml-sm-5 pl-sm-5 pt-2">
-    {% url 'quiz_result' user.quiz.id %}
-        <h4 class=""> Your Health Goal: {{healthgoalscore}}</h5>
+    {% url 'view_quiz_id' question.id %}
+        <h4 class=""> Your Health Goal: {{ healthgoalscore }}</h5>
         <p class="lead text-muted">Basic Vits nutritionist experts will reach out to you within the next 48 hours with a custom plan to get you started on your health goal.</p>
     <div class="d-flex align-items-center pt-3">
         <div id="prev"> <button class="btn btn-primary"></button>Cancel</div>
@@ -35,8 +35,6 @@
             {% else %} 
             <a class="button btn-success text-uppercase py-3" href="{% url 'profile' %}">Save in My Account</a>  
             {% endif %}   
-            <!-- <button class="btn btn-success text-uppercase">Save in profile</button>  -->
-            <!-- <a href="{% url 'profile' %}" class="btn btn-success text-uppercase">Save in profile</a> -->
         </div>
 
     </div>

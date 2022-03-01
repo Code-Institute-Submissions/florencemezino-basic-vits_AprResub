@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
 class Question(models.Model):
     question_id = models.CharField("ID", max_length=255, null=True)
     question_name = models.TextField("Question", max_length=400, null=True)
@@ -20,9 +20,8 @@ class Question(models.Model):
     option13 = models.CharField(max_length=200, null=True, blank=True)
     option14 = models.CharField(max_length=200, null=True, blank=True)
     option15 = models.CharField(max_length=200, null=True, blank=True)
-    option_text = models.CharField(max_length=200, null=True, blank=True)
 
     def __str__(self):
-        return self.question_name
+        return self.question
 
 

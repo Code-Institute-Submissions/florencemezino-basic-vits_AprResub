@@ -24,15 +24,15 @@
 <!-- Quiz details -->
 <div class="container mt-sm-5 my-1 quiz-hero-home">
     <div class="question ml-sm-5 pl-sm-5 pt-2">
-        {% url 'quiz_home' item.quiz.id %}
-        <div class="py-2 h5"><b>{{ quiz_home.question }}</b></div>
-        <div class="py-2 h5"><b>{{ quiz_home.description }}</b></div>
+        <!-- {% url 'view_quiz_id' question.id %} -->
+        <!-- <div class="py-2 h5"><b>{{ view_quiz_id.question.name }}</b></div>
+        <div class="py-2 h5"><b>{{ view_quiz_id.question.description }}</b></div>
         <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options"> 
-            <label class="options">{{ quiz_home.options }}
+            <label class="options">{{ view_quiz_id.options }}
                 <input type="radio" name="radio"> 
                     <span class="checkmark"></span>
             </label>
-        </div>
+        </div> -->
     </div>
     <div class="d-flex align-items-center pt-3">
         <div id="prev"> <button class="btn btn-primary">Previous</button> </div>
@@ -41,6 +41,4 @@
 </div>
 <!-- Quiz details -->
 </div>     
-
-
 {% endblock %}

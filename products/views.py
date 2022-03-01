@@ -22,17 +22,17 @@ def all_products(request):
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=['vitamins', 'minerals', 'plants', 'specialities', 'merchandises'])
+            categories = Category.objects.filter(name__in=categories)
 
         if 'healthgoal' in request.GET:
             healthgoals = request.GET['healthgoal'].split(',')
             products = products.filter(healthgoal__name__in=healthgoals)
-            healthgoals = HealthGoal.objects.filter(name__in=['immunity', 'brain', 'energy', 'eyes', 'sleep', 'stress', 'heart', 'joints', 'skin', 'hair', 'digestion', 'bones', 'shape'])
-
+            healthgoals = HealthGoal.objects.objects.filter(name__in=healthgoals)
+            
         if 'package' in request.GET:
             packages = request.GET['package'].split(',')
             products = products.filter(package__name__in=packages)
-            packages = Package.objects.filter(name__in=['summer', 'spring', 'autumn', 'winter'])
+            packages = Package.objects.filter(name__in=packages)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -40,7 +40,7 @@ def all_products(request):
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description_benefits__icontains=query) | Q(healthgoal__icontains=query) | Q(package__icontains=query)
+            queries = Q(name__icontains=query) | Q(description_benefits__icontains=query) | Q(healthgoal__icontains=query) | Q(package__icontains=query) | Q(tag__icontains=query)
             products = products.filter(queries)
 
     context = {

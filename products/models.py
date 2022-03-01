@@ -43,7 +43,7 @@ class Product(models.Model):
     healthgoal = models.ForeignKey('HealthGoal', null=True, blank=True, on_delete=models.SET_NULL)    
     package = models.ForeignKey('Package', null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=400)
-    description_benefits = models.CharField(max_length=200)
+    description_benefits = models.CharField(max_length=200, null=True, blank=True)
     description_benefits_1 = models.CharField(max_length=400, null=True, blank=True)
     description_benefits_2 = models.CharField(max_length=400, null=True, blank=True)
     description_benefits_3 = models.CharField(max_length=400, null=True, blank=True)

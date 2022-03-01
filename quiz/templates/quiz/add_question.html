@@ -25,9 +25,11 @@
             <div class="col-12 col-md-6">
                 <form method="POST" action="{% url 'add_question' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
-                        {{form.as_p}}
+                    {% for field in form %}
+                        {{ field | as_crispy_field }}
+                    {% endfor %}
                     <div class="text-right">
-                        <a class="btn btn-outline-secondary text-uppercase" href="{% url 'quiz' %}">Cancel</a>
+                        <a class="btn btn-outline-secondary text-uppercase" href="{% url 'quiz_home' %}">Cancel</a>
                         <button class="btn button text-uppercase" type="submit">Add Question</button>
                     </div>
                 </form>

@@ -24,17 +24,12 @@ Lighthouse - [Results](static/assets/testing/lighthousems3_results.png)
 
 * MVP concept
 - Get the “need to have” pieces : `Success`
-    - Home / take a test
-    - Products
-        - product 1: Subscription 
-        - product 2: Items
-    - Bag  + Check out / Stripe
+    - Take the test to set healthgoal in profile
+    - Buy Products withBag + Check out / Stripe
     - Accounts
         - User/Shopper
         - User/Admin
-- Get the “nice to have” pieces : `Success`
-    - Suggestion of products with great combination with the one being bought
-    - About : customer service contact form
+    - Help center : customer service contact form
 
 * AWS S3 buckets to host your static and media files
 - AWS keys are in environment variables and are not pushed to git : `Success`
