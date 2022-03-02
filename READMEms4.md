@@ -3,7 +3,7 @@
 View the live project [here](https://basic-vits.herokuapp.com/)
 
 
-![Basic Vits]({{ MEDIA_URL }}basicvits_responsiveness.png)
+![Basic Vits](/testing/basicvits_responsiveness.png)
 
 
 # User Experience (UX)
