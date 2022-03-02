@@ -76,38 +76,9 @@
         </div>
         <!--/. User delivery information + order history -->
         <hr class="mt-5">
-        <!-- User product review -->
+           <!-- /. CTA shop more -->
         <div class="row">
-            <div class="col-12 col-lg-6 text-center">
-                <p class="lead text-muted text-center mt-5 mb-5">Your Product Reviews</p>
-                <div class="order-history table-responsive">
-                    <table class="table table-sm table-borderless">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Product</th>
-                                <th>Comment</th>
-                                <th>Update</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for review in reviews %}
-                                <tr>
-                                    <td>{{ review.date }}</td>
-                                    <td>{{ item.product.name }}</td>
-                                    <td>{{ review.content }}</td> 
-                                    <td>edit and delete</td>
-                                </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
-                        <a href="{% url 'products' %}" class="btn button text-uppercase text-center mt-5">Review products</a>
-                </div> 
-            </div>            
-        <!-- /. User product review -->  
-
-        <!-- /. CTA shop more -->
-            <div class="col-12 col-lg-6 text-center">
+            <div class="col-12 text-center">
                 <p class="lead text-muted text-center mt-5 mb-5">Time to renew your vitamins supply</p>
                 <p>If you need advise about what should be your next vitamins and supplements intake you can reach out our nutrionnist experts via the help center. Meanwhile Feel free to explore our products specialities in our shop. </p>
                 <span class="icon mr-2"></span>

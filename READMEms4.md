@@ -1,4 +1,4 @@
-# Basic Vits [here](https://basic-vits.herokuapp.com/)
+# [Basic Vits](https://basic-vits.herokuapp.com/)
 
 View the live project [here](https://basic-vits.herokuapp.com/)
 

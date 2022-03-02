@@ -19,7 +19,7 @@
 }
 
 .StripeElement--invalid {
-    border-color: #fa755a,
+  color: #fa755a,
 }
 
 .StripeElement--webkit-autofill {

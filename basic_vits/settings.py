@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'products',
-    'quiz',
     'bag',
     'checkout',
     'profiles',
@@ -135,6 +134,7 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+
 
 
 # Password validation
@@ -233,6 +233,4 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-
-
 

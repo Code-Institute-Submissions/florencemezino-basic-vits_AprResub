@@ -204,24 +204,18 @@
 					</span>
 					<span class="text-uppercase">Explore new specialities</span>
 				</a>
-                <!-- <a href="{% url 'profile' %}" class="btn button my-2">
-					<span class="icon mr-2">
-						<i class="fas fa-user"></i>
-					</span>
-					<span class="text-uppercase">Go to Profile</span>
-				</a> -->
-                {% else %}
-                <a href="{% url 'products' %}" class="btn button text-uppercase my-2">
-					<span class="icon mr-2">
-						<i class="fas fa-gifts"></i>
-					</span>
-					<span class="text-uppercase">Explore new specialities</span>
-				</a>
                 <a href="{% url 'profile' %}" class="btn button my-2">
 					<span class="icon mr-2">
 						<i class="fas fa-user"></i>
 					</span>
 					<span class="text-uppercase">Go to Profile</span>
+				</a>
+                {% else %}
+                <a href="{% url 'products' %}" class="btn button text-uppercase my-2">
+					<span class="icon mr-2">
+						<i class="fas fa-gifts"></i>
+					</span>
+					<span class="text-uppercase">Explore more products</span>
 				</a>
                 {% endif %}
             </div>

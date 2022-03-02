@@ -254,6 +254,7 @@ Basic Vits Lighthouse - [Results](testing/lighthouse_basicvits_.png)
 - Authentification
     - User don't receive email when resetting the password
 
+
 ## Feedback
 
 If you have any feedback, please reach out to the developper of the this project Florence Mezino at florence.mezino@outlook.com 
