@@ -1,9 +1,9 @@
-# Basic Vits [here](https://basic-vits.herokuapp.com/))
+# Basic Vits [here](https://basic-vits.herokuapp.com/)
 
 View the live project [here](https://basic-vits.herokuapp.com/)
 
 
-![Basic Vits]({{MEDIA_URL}}basicvits_responsiveness.png)
+![Basic Vits]({{ MEDIA_URL }}basicvits_responsiveness.png)
 
 
 # User Experience (UX)
@@ -207,21 +207,15 @@ Tou can fin the diagram of the project [here](https://drawsql.app/basic-vits/dia
     - examples of vitamins package per user
     - footer (copyright info / social media links)
 
-    ![home]()
-
-
 2. `Shop` :
     - Search bar
     - By category : `Vitamins`, `Minerals`,`Plants`,`Specialties`,`Accessories/Merch`
     - By package: `Summer`, `Spring`, `Autumn`, `Winter`
     - By health goal : `Immunity`, `Brain`, `Energy`, `Eyes`, `Sleep`, `Stress`, `Heart`, `Joints`, `Skin`, `Hair`, `Digestion`, `Bones`, `Shape`
-
     - Product details  + Leave a review
-
 
 3. `Take the test` :
     - form to filter the shop and get personalized products recommendations for user. 
-
 
 4. `Bag`(account required):
     - Order confirmation / checkout
@@ -236,14 +230,13 @@ Tou can fin the diagram of the project [here](https://drawsql.app/basic-vits/dia
         - Reviews history
         - Order history
 
-    - Admin Profile
+6. `Admin Profile`
         - Product management (CRUD : create, read, update, delete product)
         
 
 * The website's pages and different features are responsive on all device sizes. 
 * Each page features a responsive header with navigation bar and a logo placed in the center of the navigation bar
 * There is a footer with copyright information and social media links.
-
 
 ## Features left to implement
 
