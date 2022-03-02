@@ -2,7 +2,7 @@
 
 [View the live project here](link)
 
-![Basic Vits](testing/responsivemockup.png)
+![Basic Vits]({{MEDIA_URL}}basicvits_responsiveness.png)
 
 
 # User Experience (UX)
