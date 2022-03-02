@@ -1,6 +1,7 @@
-[Basic Vits](link)
+# Basic Vits [here](https://basic-vits.herokuapp.com/))
 
-[View the live project here](link)
+View the live project [here](https://basic-vits.herokuapp.com/)
+
 
 ![Basic Vits]({{MEDIA_URL}}basicvits_responsiveness.png)
 
@@ -268,7 +269,7 @@ Amazon Web Service (AWS) S3 was used to store all images available on the Basic 
 
 
 * The website's pages and different features are responsive on all device sizes. 
-* Each page features a responsive header with navigation bar and a conventional placing of logo (top left).
+* Each page features a responsive header with navigation bar and a logo placed in the center of the navigation bar
 * There is a footer with copyright information and social media links.
 
 
@@ -417,6 +418,7 @@ The text, images and other data in the database was sourced from various local w
 ## Media
 
 - All photos and images were edited by the developer.
+- Media were sourced mainly on [Pexel](https://www.pexels.com/)
 
 ## Code
 

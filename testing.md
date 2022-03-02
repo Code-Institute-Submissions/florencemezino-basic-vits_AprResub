@@ -1,7 +1,7 @@
 # Basic Vits documentation
 
-Main READMEms4.md file [here]()
-View the live project [here]()
+Main READMEms4.md file [here](https://github.com/florencemezino/basic-vits/blob/main/READMEms4.md)
+View the live project [here](https://basic-vits.herokuapp.com/)
 
 ## Testing 
 
@@ -30,6 +30,7 @@ Lighthouse - [Results](static/assets/testing/lighthousems3_results.png)
         - User/Shopper
         - User/Admin
     - Help center : customer service contact form
+    - Review a product by a user 
 
 * AWS S3 buckets to host your static and media files
 - AWS keys are in environment variables and are not pushed to git : `Success`
@@ -40,7 +41,7 @@ Lighthouse - [Results](static/assets/testing/lighthousems3_results.png)
 - Ensure that users not logged in are redirected to the login page : `Success`
 - Check that authentication cannot be bypassed by typing the URL into the browser bar -  consider creating custom 403/404 pages to deal with this : `Success`
 - Make sure you have checked that no links result in an internal server error : `Success`
-- If you have included a user type with higher access privileges, then you can include example login credentials at submissio : `Success`
+- If you have included a user type with higher access privileges, then you can include example login credentials at submission : `Success`
 - Do not display links the user does not have the privileges to access : `Success`
 
 *  Deployment
@@ -51,7 +52,6 @@ Lighthouse - [Results](static/assets/testing/lighthousems3_results.png)
 - Use a combination of if-else and environment variables in the settings.py to ensure the application is correctly set up on Heroku : `Success`
 
 
-
 ## Further Testing
 
 * The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
@@ -60,6 +60,24 @@ Lighthouse - [Results](static/assets/testing/lighthousems3_results.png)
 * Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ## Known Bugs
+
+- Home
+    - Footer not fixed in every page
+
+- Shop / Products
+    - Main nav dropdown goes over product details content
+    - Tags are not saved 
+    - Product detail images are streched
+
+- Bag
+    - Update button is not working. User has to use only the + and - or use use remove button to delete.
+    - Bag is not responsive on mobile
+    
+- Checkout
+    - Subtotal not working
+
+- Authentification
+    - User don't receive email when resetting the password
 
 ## Feedback
 
