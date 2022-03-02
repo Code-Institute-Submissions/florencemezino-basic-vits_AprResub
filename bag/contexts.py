@@ -52,6 +52,3 @@ def bag_contents(request):
     }
     print(context)
     return context
-
-# free delivery : done
-# Create discount 30% on first order

@@ -62,7 +62,7 @@ d. ultimate goal
 
 ## Business and developer goals
 
-- `Basic Vits` inc. company want to make vitamins and supplements accessible to anyone who wish to improve their health continuously. It is a flexible monthly subscription service. End Users can modify, postpone or cancel their next order at any time in their account. Only the merch product category is a one time buy.
+- `Basic Vits` inc. company want to make vitamins and supplements accessible to anyone who wish to improve their health continuously. It offers a service in which users can have a customized plan. 
 - `Basic Vits` inc. company business model is to resell vitamins and supplements to end user as a monthly personalized subscription.
 
 - As a developer, I want to gain profesionnal experience in developping an ecommerce website using Python+Django
@@ -74,43 +74,45 @@ d. ultimate goal
 
 * View and navigate :
 1. View a list of products so that I can select some to purchase / build my personalized subcription package regarding to my needs and health objectives
-2. View easily individual product detsils so that I can identify the related vitamin I need in terms of product, price, description with medical insights, image and available format
-3. Easily view the total of my purchase/personalized subcription so that I can manage my monthly vitamins and supplements budget.
+2. View easily individual product details so that I can identify the related vitamin I need in terms of product, price, description with medical insights, image and available format
+3. Easily view the total of my purchase/personalized plan so that I can manage my vitamins and supplements budget.
 
 * Register and have an account:
 4. Easily register for an account so that I can have benefits such as discount on products.
 5. Easily and safely log in and out so that I can access my personal account information in a secure way.
-7. Have a personalized user profile so that I can view my health profile, customized recommendations, order confirmations and history subcription details.
+7. Have a personalized user profile so that I can view my reviews and order confirmations.
 
-* Sort and search
-6. Sort the list of available products in a personalized way so that I can have a list of product suggestions that matches my needs
-7. Sort a specific category of product regarding to my gender / persona profile so that I am sure I can have a bundle of basic and targeted products
-8. Sort multiple categories of products simultaneously by health goal so that I can have an overview of product for a specific need.
-9. Search for product by name or description directly and easily see what I've searched so that I can efficiently add what I need in my cart
+* Filter and search
+6. Filter the list of available products in a personalized way so that I can have a list of product suggestions that matches my needs
+7. Filter multiple categories of products simultaneously by health goal so that I can have an overview of product for a specific need.
+8. Filter a specific category of product packages regarding to the season so that I am sure I can get what I need in the right time.
+9. Search for product by name or description with my own words so that I can efficiently add what I need in my cart
 
 * Purchase and Check out
-10. Have the quantity preselected for 1 month in my cart renewable as a subcription so I am covered for an entire of month and I don't have to think how much should I buy
-11. View items in my bag to be purchased so I identify the total cost of my purchase and all vitamins items I will receive
-12. Easily enter payment information so that I can check out quickly and with no hassles
-13. Feel that my personal and payment information are safe when using the `Basic Vits` site so that I can confidently provide the needed information to make the purchase
-14. View an order confirmation after check out so that I can verify that I haven't made any mistakes and be reassured
-15. Feel that I can trust the efficiency and the safety of the products that I am buying as it is part of nutrition so that I can feel purchase vitamins and product from `Basic Vits` confidently
+10. View items in my bag to be purchased so I identify the total cost of my purchase and all vitamins items I will receive
+11. Easily enter payment information so that I can check out quickly and with no hassles
+12. Feel that my personal and payment information are safe when using the `Basic Vits` site so that I can confidently provide the needed information to make the purchase
+13. View an order confirmation after check out so that I can verify that I haven't made any mistakes and be reassured
+14. Feel that I can trust the efficiency and the safety of the products that I am buying as it is part of nutrition so that I can feel purchase vitamins and product from `Basic Vits` confidently
 
 
 ### As a returning `Basic Vits` shopper, I want to :
 
 * Account verification
-16. Receive an email confirmation after registering so that I can verify that my account registration was successful
+15. Receive an email confirmation after registering so that I can verify that my account registration was successful
 
 * Purchase and Check out
-17. Receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records
-18. Have the possibility to contact a team of profesionnals (customer service or nutritionnist) so that I can adress potential issues with my order
+16. Receive an email notification after checking out so that I know that my order went through
+17. Have the possibility to contact a team of profesionnals (customer service or nutritionnist) so that I can adress potential issues with my order
+
+* Review product detail
+18. Give my opinion about a certain product and other people review so that I feel reassured about the products that I buy
 
 
 ### As a frequent `Basic Vits` shopper, I want to :
 
 * User Accounts / Purchasing and Check out
-19. Make use of my account to access easily my previous orders so that I can buy a refill of vitamins and supplements in few steps without having to fill the cart again.
+19. Make use of my account to access easily my previous orders so that I can buy a refill of vitamins and supplements in few steps
 
 * Sorting and Searching
 20. Have the possibility to assess my vitamins and supplements needs so that I can see if my needs changed and if I need to order different products
@@ -132,6 +134,8 @@ The user stories mentionned above covers the following features :
 - Registration and User Accounts
 - Sorting and Searching
 - Purchasing and Check out
+- Review
+- Contact
 - Admin and Store Management
 
 
@@ -143,52 +147,39 @@ The `Lora` font is the main font used throughout the whole website with `sans-se
 `Lora` is very similar in appearance to Times New Roman. Its soft curves and larger typeface makes this font perfect for medical/nutrition purpose. This modern font gives a serious, professional appearance.
 
 
-### Icons
-
-### Colours
+### Colors
 
 The main colours used for this project are as follow : 
 
-* `#F8F6F4`: PAMPAS (Light shades) = grey/white color
-* `#E37F61`: TERRACOTTA (Light accent) = orange / ocre color
-* `#AC5751`: MATRIX (Main brand color) = dark red/orange
-* `#9A8A98`: VENUS (Dark accent) = light purple/grey
-* `#3B3238`: THUNDER (Dark shades) = dark blue-grey
+* `#95b094`: Light green
+* `#033718`: Dark Green
+* `#fc8d1e`: Bright Orange
+* `#f8dd9d`: Bright Yellow
 
-Warm color tones were chosen as the main brand color for `Basic Vits`.
+
+- warm color tones were chosen as the main brand color for `Basic Vits`.
 Orange as a color represents an abundance of strength, life, and foods.
-Since it is a combination of red (physical, blood) and yellow (emotional, light, joy), orange is an actiive and stimulating color.
-- Positive connotation : Physical comfort, food, warmth
+Since it is a combination of red (physical, blood) and yellow (emotional, light, joy), orange is an active and stimulating color. (Positive connotation : Physical comfort, food, warmth)-
 
+- Green color code was choosen as it represents balance. Thanks to its products `Basic Vits` wants to bring harmoney between body and mind.
 
-### Styling
+### Styling / Icons / Backgrounds
 
-### Backgrounds
+- Clean and minimalistic design with white background, large image and few icons.
 
 ## Wireframes
 
 The wireframes were created using Balsamiq during the Scope plan of the design and planning process for this project
 
-- [All wireframes]()
-- [Mobile wireframes]()
-- [Tablet wireframes]()
-- [Desktop wireframes]()
+- [All wireframes](testing/basicvits_wireframes.pdf))
 
-- [Home]()
-- [Shop]()
-- [Shop - Product view]()
-- [Take the test]()
-- [Bag]()
-- [My Account - Sign in / Register]()
-- [My Account - User Profile ]()
-- [My Account - Admin Profile ]()
-- [About]()
 
 ## Database Structure
 
 #### Basic Vits Database structure using drawSQL
 
-![Basic Vits](relational_database_structure.png)
+Basic Vits Data Structure was built using [drawSQL](https://drawsql.app/)
+Tou can fin the diagram of the project [here](https://drawsql.app/basic-vits/diagrams/basic-vits#)
 
 * Products retail mapping
 
@@ -200,9 +191,7 @@ The wireframes were created using Balsamiq during the Scope plan of the design a
 
 #### AWS S3 
 
-Amazon Web Service (AWS) S3 was used to store all images available on the Basic Vits sie.
-
-![S3](s3_images_storage.png)
+[Amazon Web Service (AWS) S3](https://s3.console.aws.amazon.com/) was used to store all images available on the Basic Vits sie.
 
 
 # Features
@@ -224,22 +213,19 @@ Amazon Web Service (AWS) S3 was used to store all images available on the Basic 
 2. `Shop` :
     - Search bar
     - By category : `Vitamins`, `Minerals`,`Plants`,`Specialties`,`Accessories/Merch`
-    - By package: `Women's health`, `Men's health`, `Kids's health`, `Teenage's health`, `Senior's health`, `Pregnancy's health`
+    - By package: `Summer`, `Spring`, `Autumn`, `Winter`
     - By health goal : `Immunity`, `Brain`, `Energy`, `Eyes`, `Sleep`, `Stress`, `Heart`, `Joints`, `Skin`, `Hair`, `Digestion`, `Bones`, `Shape`
 
+    - Product details  + Leave a review
 
-    ![shop]()
 
 3. `Take the test` :
-    - form to filter the shop and get personalized products recommendations for user. This feature allows users to build their own pack based on their answers to the test
+    - form to filter the shop and get personalized products recommendations for user. 
 
-    ![Take the test]()
 
 4. `Bag`(account required):
     - Order confirmation / checkout
     - toast notifications 
-
-    ![bag]()
 
 5. `My Account`:
     - Register (discount banner : Register now and get 30% discount on your first order)
@@ -247,26 +233,12 @@ Amazon Web Service (AWS) S3 was used to store all images available on the Basic 
     - Sign out
     - User Profile
         - User info 
-        - health goal info + product recommendations from "take the test"
+        - Reviews history
         - Order history
-        - Easy refill (buy again option from each order in history)
 
     - Admin Profile
         - Product management (CRUD : create, read, update, delete product)
         
-
-    ![my account register]()
-    ![my account sign in]()
-    ![my account user profile]()
-    ![my account admin profile]()
-
-6. `About` :
-    - values / ethics / trust / product reliability
-    - team + discover their vitamins package
-    - contact form(field for order confirmation if user is logged in)
-
-    ![About]()
-
 
 * The website's pages and different features are responsive on all device sizes. 
 * Each page features a responsive header with navigation bar and a logo placed in the center of the navigation bar
@@ -278,12 +250,12 @@ Amazon Web Service (AWS) S3 was used to store all images available on the Basic 
 * Shop
 - Sort productS alphabetically A -Z
 - Display number of products available with or without applying filter in the shop section
+- subcription : Have the quantity preselected for 1 month in my cart renewable as a subcription so I am covered for an entire of month and I don't have to think how much should I buy. Payment will be automatic every month.
 
 * User account
 - Register and sign in with social media account
-- Incentive : free delivery for purchase about 20 euros.
-- Follow up : reminder to take the test again to asses possible new needs
-- Recover password if forgotten
+- Follow up : reminder to take the test again to assess possible new needs
+-Customized recommendation as per health goal focus in profile
 - Receive monthly nutritive recipes ideas as per health goals set in profile account
 - Develop a calendar : reminders to take vitamins as per subcription
 - Import blood test result to generate a list of vitamins and supplements recommendations
@@ -293,9 +265,6 @@ Amazon Web Service (AWS) S3 was used to store all images available on the Basic 
 - New offer : Extend the product database by adding a new product category called gift cards
 - New offer : Extend the product database with different product format, other than pills such as gummies, powder etc.
 - Admin dashboard to see statics about product sales
-
-* About
-- Build a FAQ / helpcenter / education platform 
 
 
 # Techonolgies used
@@ -342,29 +311,27 @@ DrawSQL was used to mind mad the data structure
 11. [Bootstrap 4 multiple choice questions quiz template](https://bbbootstrap.com/similar/bootstrap-mcq-quiz-online-test-template-83992612)
 Bootstrap 4 was used to create the form from "Take the test" option
 
-12. 
-
-13. [Bootstrap starter template](https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template)
+12. [Bootstrap starter template](https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template)
 Bootstrap starter template was used to built the website structure
 
-14. [JQuery](https://releases.jquery.com/)
+13. [JQuery](https://releases.jquery.com/)
 
-15. [Django-taggit](https://django-taggit.readthedocs.io/en/latest/getting_started.html)
+14. [Django-taggit](https://django-taggit.readthedocs.io/en/latest/getting_started.html)
 
-16. [Django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+15. [Django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/)
 
-17. [Django widget](https://github.com/django/django/blob/main/django/forms/templates/django/forms/widgets/clearable_file_input.html)
+16. [Django widget](https://github.com/django/django/blob/main/django/forms/templates/django/forms/widgets/clearable_file_input.html)
 
-18. [Django Key generator](https://miniwebtool.com/fr/django-secret-key-generator/)
+17. [Django Key generator](https://miniwebtool.com/fr/django-secret-key-generator/)
 
-19. [Django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+18. [Django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
 
-20. [Trello](https://trello.com/)
+19. [Trello](https://trello.com/)
 Trello was used as a bug tracker for this project
 
 Basic Vits Trello [view](https://trello.com/b/UpMuWmHD/trello-bug-tracking)
 
-21. [Mdn Bootstrap](https://mdbootstrap.com/docs/standard/extended/faq/)
+20. [Mdn Bootstrap](https://mdbootstrap.com/docs/standard/extended/faq/)
 MDN bootstrap was used to generate a FAQ static section
 
 
@@ -414,7 +381,6 @@ The text, images and other data in the database was sourced from various local w
 - [Onatera](https://www.onatera.com/)
 
 
-
 ## Media
 
 - All photos and images were edited by the developer.
@@ -461,20 +427,20 @@ Note : In order to set products on Basic Vits site, example of fixtures were cre
 
 ### Mentoring session advice
 
-* Mentor Session 1: Project Planning / 04-02-2022
+* Mentor Session 1: Project Planning 
 - Use DrawSQL to wireframe data structure [view](https://drawsql.app/)
 - How to use sessions[here](https://docs.djangoproject.com/en/dev/topics/http/sessions/)
 - Subscription model, investigate automatic monthly payment from stripe
 - Make sure any products update doesn't affect order confirmations history from user profile
 
-* Project inception / 15-02-2022
+* Project inception 
 - How to Use Django's Generic Relations [view](https://simpleisbetterthancomplex.com/tutorial/2016/10/13/how-to-use-generic-relations.html)
 
 * Mentor Session 2: Mid-Point Project Review
-- 
-- 
+- Build Quiz with Django form
 
 * Mentor Session 3: Final Project Review
+- Explanation of S3 AWS
 
 
 ## Acknowledgments

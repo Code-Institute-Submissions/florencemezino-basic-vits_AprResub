@@ -19,7 +19,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="bg-title"> 
+                <div class="bg-title text-center"> 
                     <hr>
                     <h2 class="logo-font mb-4">Checkout</h2>
                     <hr>
@@ -39,18 +39,16 @@
                     </div>
                 </div>
                 {% for item in bag_items %}
-                    <div class="row">
+                    <div class="row"> 
                         <div class="col-2 mb-1">
-                            {% if product.image %} 
                             <a href="{% url 'product_detail' item.product.id %}">
-                                <img src="{{ product.image.url }}" class="card-img-top w-100" alt="{{ product.name }}">
+                                {% if item.product.image %}
+                                    <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                {% else %}
+                                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                {% endif %}
                             </a>
-                            {% else %}
-                            <a href="{% url 'product_detail' item.product.id %}">
-                                <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top w-100" alt="no image">
-                                </a>
-                            {% endif %}
-                        </div>
+                        </div> 
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
@@ -98,8 +96,8 @@
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 							{% else %}
 								<label class="form-check-label" for="id-save-info">
-                                    <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
-                                    <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                                    <a class="text-secondary bg-title" href="{% url 'account_signup' %}">Create an account</a> or 
+                                    <a class="text-secondary bg-title" href="{% url 'account_login' %}">login</a> to save this information
                                 </label>
 							{% endif %}
 						</div>
