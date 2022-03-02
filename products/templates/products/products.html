@@ -19,7 +19,7 @@
                     <div class="col-lg-6 col-md-8 mx-auto">
                         <h3 class="fw-light">Build your own package</h3>
                         <p class="lead text-muted">Take ownership of your health and pick up your basic vits</p>
-                        <form method="GET" action="">
+                        <form method="GET" action="{% url 'products' %}">
                             <div class="input-group w-100">
                                 <input class="form-control border" type="text" name="q" placeholder="Search our products">
                                 <div class="input-group-append">
@@ -120,7 +120,9 @@
     </div>
     {% endblock %}
 
-
+    {% block postloadjs %}
+    {{ block.super }}
+    {% endblock %}
 
 
 

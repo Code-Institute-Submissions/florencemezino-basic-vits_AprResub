@@ -7,7 +7,6 @@ from taggit.models import Tag
 from .models import Product, Category, HealthGoal, Package
 from .forms import ProductForm
 
-# Create your views here.
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -27,7 +26,7 @@ def all_products(request):
         if 'healthgoal' in request.GET:
             healthgoals = request.GET['healthgoal'].split(',')
             products = products.filter(healthgoal__name__in=healthgoals)
-            healthgoals = HealthGoal.objects.objects.filter(name__in=healthgoals)
+            healthgoals = HealthGoal.objects.filter(name__in=healthgoals)
             
         if 'package' in request.GET:
             packages = request.GET['package'].split(',')
@@ -40,7 +39,7 @@ def all_products(request):
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description_benefits__icontains=query) | Q(healthgoal__icontains=query) | Q(package__icontains=query) | Q(tag__icontains=query)
+            queries = Q(name__icontains=query) | Q(description_benefits__icontains=query) | Q(description_benefits_1__icontains=query) | Q(description_benefits_2__icontains=query) | Q(description_benefits_3__icontains=query) 
             products = products.filter(queries)
 
     context = {

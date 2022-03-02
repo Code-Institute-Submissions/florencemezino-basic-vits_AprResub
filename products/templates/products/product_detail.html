@@ -64,7 +64,7 @@
                                                 </span>
                                             </button>
                                         </div>
-                                        <input class="form-control qty_input" type="number"
+                                        <input class="form-control qty_input btn-sm" type="number"
                                         name="quantity" value="1" min="1" max="99"
                                         data-item_id="{{ product.id }}"
                                         id="id_qty_{{ product.id }}">
@@ -87,7 +87,7 @@
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn button text-uppercase mt-5" value="Add to Bag">
+                                <input type="submit" class="btn button text-uppercase" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
@@ -104,55 +104,55 @@
     <div class="row">
         <div class="col-md-12">
             <div class="bg-white rounded shadow-sm p-4 mb-4 restaurant-detailed-ratings-and-reviews">
-                <hr>
-                <h5 class="mb-1">All Reviews</h5>
-                <hr>
-                <div class="reviews-members pt-4 pb-4">
-                    <div class="media">
-                        {% if user.image %}
-                        <a href="" class="mr-3 rounded-pill" target="_blank" alt="Generic placeholder image">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}{{ user.image }}" alt="{{ user.name }}">
-                        </a>
-                        {% else %}
-                        <a href="">
-                            <img class="card-img-top img-fluid" src="{ {MEDIA_URL }}noimage_user.png" alt="{{ user.name }}">
-                        </a>
-                    {% endif %}
-                        <div class="media-body">
-                            <h6 class="mb-1"><a class="text-black" href="#">{{ review.title }}</a></h6>
-                            <p class="text-gray">{{ review.date }}</p>
-                            <div class="reviews-members-body">
-                                <p>{{ review.content }}</p>
-                            </div>
-                            <div class="reviews-members-footer">
-                                <h6 class="mb-1"><a class="text-black" href="#">{{ user.firstname }}</a></h6>
-                                <p class="text-gray">{{ user.position }}</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="bg-title">
+                    <hr>
+                    <h5 class="mb-1 text-center">All Reviews about {{ item.product.name }}</h5>
+                    <hr>
                 </div>
-                <hr>
-                <a class="text-center w-100 d-block mt-4 font-weight-bold" href="#">See All Reviews</a>
+                <div class="order-history table-responsive">
+                    <table class="table table-sm table-borderless">
+                        <thead>
+                            <tr class="text-center">
+                                <th>Member </th>
+                                <th>Comment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for review in reviews %}
+                                <tr>
+                                    <td>{{ review.user.firstname}}</td>
+                                    <td>{{ review.title }}</td>
+                                    <td>{{ review.content }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div> 
             </div>
         </div>
     </div>
     <!-- Review per product: Form--> 
     <div class="row">
         <div class="col-md-6">
-            <div class="bg-white rounded shadow-sm p-4 mb-5 rating-review-select-page">
-                <hr>
-                <h5 class="mb-4">Leave Comment</h5>
-                <hr>
+            <div class="rounded shadow-sm p-4 mb-5 rating-review-select-page">
+                <div clas="bg-title">
+                    <hr>
+                    <h5 class="mb-4">Share with the Basic Vits Community</h5>
+                    <hr>
+                </div>
                 <form>
                     <div class="form-group">
-                        <label>Your Comment</label>
-                        <textarea class="form-control"></textarea>
+                        <label></label>
+                        <textarea class="form-control" placeholder="Leave your comment about this product here"></textarea>
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-primary btn-sm" type="button"> Submit Comment </button>
+                        <button class="btn button text-uppercase btn-sm mt-2" type="button"> Submit </button>
                     </div>
                 </form>
             </div>
+        </div>
+        <div class="col-md-6">
+            <p class="lead text-center mt-5 mb-5">These people chose Basic Vits to take care of their health. Your well-being is our priority, that is why we pay particular attention to your feedback to make Basic Vits evolve according to your needs and desires.</p>
         </div>
     </div>
 </div>

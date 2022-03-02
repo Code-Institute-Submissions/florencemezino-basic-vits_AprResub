@@ -94,21 +94,8 @@
                             {% for review in reviews %}
                                 <tr>
                                     <td>{{ review.date }}</td>
-                                    <td>
-                                        <ul class="list-unstyled">
-                                            {% for item in review.lineitems.all %}
-                                                <li class="small">
-                                                    {{ item.product.name }}
-                                                </li>
-                                            {% endfor %}
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <a href="{% url 'order_history' order.order_number %}"
-                                        title="{{ order.order_number }}">
-                                            {{ review.review_comment }}
-                                        </a>
-                                    </td>
+                                    <td>{{ item.product.name }}</td>
+                                    <td>{{ review.content }}</td> 
                                     <td>edit and delete</td>
                                 </tr>
                             {% endfor %}
@@ -116,9 +103,7 @@
                     </table>
                         <a href="{% url 'products' %}" class="btn button text-uppercase text-center mt-5">Review products</a>
                 </div> 
-            </div>
-
-            
+            </div>            
         <!-- /. User product review -->  
 
         <!-- /. CTA shop more -->

@@ -13,16 +13,18 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 bg-title">
-                <hr>
-                <h2 class="logo-font mb-4">Product Management</h2>
-                <h5 class="text-muted">Add a Product</h5>
-                <hr>
+            <div class="col-12">
+                <div class="bg-title">
+                    <hr>
+                    <h2 class="logo-font text-center mb-4">Product Management</h2>
+                    <hr>
+                </div>
+                <h5 class="lead text-center text-muted">Add a Product</h5>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 ">
                 <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
@@ -37,7 +39,8 @@
                         <button class="btn button text-uppercase" type="submit">Add Product</button>
                     </div>
                 </form>
-            </div>            
+            </div>
+            <img src="{{MEDIA_URL}}step_2.png" style="display:block; margin-left: auto; margin-right: auto; border-radius: 2%;" width = "400" height = "400" alt="a leaf">         
         </div>
     </div>
 {% endblock %}

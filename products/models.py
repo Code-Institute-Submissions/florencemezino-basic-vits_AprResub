@@ -40,17 +40,13 @@ class Package(models.Model):
 class Product(models.Model):
     sku = models.CharField("SKU", max_length=255, blank=True, null=True)
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
-    healthgoal = models.ForeignKey('HealthGoal', null=True, blank=True, on_delete=models.SET_NULL)    
+    healthgoal = models.ForeignKey('HealthGoal', null=True, blank=True, on_delete=models.SET_NULL)
     package = models.ForeignKey('Package', null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=400)
     description_benefits = models.CharField(max_length=200, null=True, blank=True)
     description_benefits_1 = models.CharField(max_length=400, null=True, blank=True)
     description_benefits_2 = models.CharField(max_length=400, null=True, blank=True)
     description_benefits_3 = models.CharField(max_length=400, null=True, blank=True)
-    description_benefits_4 = models.CharField(max_length=400, null=True, blank=True)
-    description_benefits_5 = models.CharField(max_length=400, null=True, blank=True)
-    description_benefits_6 = models.CharField(max_length=400, null=True, blank=True)
-    style = RichTextField(null=True, blank=True) 
     quantity = models.CharField(max_length=400, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
@@ -58,3 +54,5 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+        
