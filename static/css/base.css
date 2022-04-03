@@ -424,7 +424,6 @@ input[name='q']::placeholder {
     .nav-link {
         padding: 0.15rem;
         color :#033718;
-        background-color: rgba(240,187,42,0.5); 
         
 }
     }
