@@ -46,12 +46,10 @@
         <div id="top-nav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-left my-0">
-                    {% if request.user.is_authenticated %}
-                        {% if request.user.is_superuser %}
+                    {% if user.is_superuser %}
                     <li class="list-inline-item">
                         <a href="{% url 'add_product' %}" class="test-now-button btn-sm text-uppercase py-3">Add Product</a>
                     <li class="list-inline-item">
-                        {% endif %}
                     {% else %}
                         <li class="list-inline-item">
                             <a href="https://0xljnku64g4.typeform.com/to/TKb0ptMs" class="test-now-button btn-sm text-uppercase py-3">Take the Test</a>
@@ -165,7 +163,7 @@
     {% endblock %}
 
     <!-- Footer -->
-    <div class="container-fluid">
+    <div class="container-fluid footer-margin-top">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer-background">
         <div class="col-md-4">
             <span class="footer-background">This product and service is not intended to diagnose, treat, cure or prevent any disease.
