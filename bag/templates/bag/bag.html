@@ -81,7 +81,7 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size=""><small>Remove</small></a>
+                                        <button class="remove-item float-right" id="remove_{{ item.item_id }}" data-size="" style="color:#fc8d1d; border:none; background:none; border-radius: 5%;"><small>Remove</small></button>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
@@ -94,7 +94,7 @@
                                     <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
                                     <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_delivery_delta > 0 %}
-                                        <p class="mb-1 text-danger">
+                                        <p class="mb-1" style="color:#fc8d1d">
                                             You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
                                         </p>
                                     {% endif %}

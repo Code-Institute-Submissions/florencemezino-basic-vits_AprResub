@@ -18,18 +18,18 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="bg-title"> 
+                <div class="bg-title text-center"> 
                     <hr>
                     <h2 class="logo-font mb-4">Thank you {{ order.full_name }}</h2>
                     <hr>
                 </div>    
-                    <h4> Your vitamins are on their way</h4>
-                    <p>Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
+                    <h4 class="text-center mt-5"> Your vitamins are on their way</h4>
+                    <p class=" lead text-center mb-5">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12 col-lg-7">
+            <div class="col-12 col-lg-12">
                 <img src="{{ MEDIA_URL }}order_success_banner.png" class="card-img-top d-block w-100" alt="vitamins">
                 <div class="order-confirmation-wrapper p-2 border">
                     <div class="row">
@@ -200,17 +200,17 @@
             <div class="col-12 mt-5 text-center ">
                 {% csrf_token %}
                 {% if from_profile %}
-                <a href="{% url 'products' %}" class="btn button text-uppercase my-2">
-					<span class="icon mr-2">
-						<i class="fas fa-gifts"></i>
-					</span>
-					<span class="text-uppercase">Explore new specialities</span>
-				</a>
                 <a href="{% url 'profile' %}" class="btn button my-2">
 					<span class="icon mr-2">
 						<i class="fas fa-user"></i>
 					</span>
-					<span class="text-uppercase">Go to Profile</span>
+					<span class="text-uppercase">Back to Profile</span>
+				</a>
+                <a href="{% url 'products' %}" class="btn button text-uppercase my-2">
+					<span class="icon mr-2">
+						<i class="fas fa-gifts"></i>
+					</span>
+					<span class="text-uppercase">Explore more products</span>
 				</a>
                 {% else %}
                 <a href="{% url 'products' %}" class="btn button text-uppercase my-2">

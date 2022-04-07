@@ -160,7 +160,6 @@ body {
 
 .main-logo {
     width: fit-content;
-    color : #FC8D1E;
     text-decoration: none;
     position : relative;
     left: 50%;
@@ -214,7 +213,20 @@ body {
     text-decoration: none;
 }
 
+.dropdown-item {
+    background : white;
+    color: #033718;
+}
 
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus {
+    background: rgba(149,176,148,0.5);
+    color:  #033718;
+    border-style: dashed;
+    text-decoration: none;
+
+}
 /* Search bar */
 
 input[name='q']::placeholder {
