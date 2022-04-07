@@ -81,7 +81,8 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <button class="remove-item float-right" id="remove_{{ item.item_id }}" data-size="" style="color:#fc8d1d; border:none; background:none; border-radius: 5%;"><small>Remove</small></button>
+                                        <button class="update-link float-right" style="color:#fc8d1d; border:none; background:none; border-radius: 5%;"><small>Update</small></button>
+                                        <button class="remove-item float-" id="remove_{{ item.item_id }}" data-size="" style="color:#fc8d1d; border:none; background:none; border-radius: 5%;"><small>Remove</small></button>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
