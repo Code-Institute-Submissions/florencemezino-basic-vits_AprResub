@@ -47,10 +47,13 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-left my-0">
                     {% if request.user.is_authenticated %}
+                        <li class="list-inline-item">
+                            <a href="https://0xljnku64g4.typeform.com/to/TKb0ptMs" class="test-now-button btn-sm text-uppercase py-3" target="_blank">Take the Test</a>
+                        <li class="list-inline-item">
                         {% if request.user.is_superuser %}
-                    <li class="list-inline-item">
-                        <a href="{% url 'add_product' %}" class="test-now-button btn-sm text-uppercase py-3">Add Product</a>
-                    <li class="list-inline-item">
+                        <li class="list-inline-item">
+                            <a href="{% url 'add_product' %}" class="test-now-button btn-sm text-uppercase py-3">Add Product</a>
+                        <li class="list-inline-item">
                         {% endif %}
                     {% else %}
                         <li class="list-inline-item">
