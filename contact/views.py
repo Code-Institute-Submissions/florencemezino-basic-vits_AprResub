@@ -21,19 +21,14 @@ def contact_view(request):
     return render(request, 'contact/contact.html', context)
 
 
-# def _send_confirmation_email(self, request):
-#     """Send the user a confirmation email"""
-#     cust_email = request.email
-#     subject = render_to_string(
-#         'contact/confirmation_emails/confirmation_email_subject.txt',
-#         )
-#     body = render_to_string(
-#         'contact/confirmation_emails/confirmation_email_body.txt',
-#         {'contact_email': settings.DEFAULT_FROM_EMAIL})
+def _send_customer_email(request):
+    """Send the user a summary of their request from contact form by email"""
+    cust_email = request.email
+    subject = render_to_string(
+        'contact/customer_emails/customer_email_subject.txt',
+        )
+    body = render_to_string(
+        'contact/customer_emails/customer_email_body.txt',
+        {'contact_email': settings.DEFAULT_FROM_EMAIL})
     
-#     send_mail(
-#         subject,
-#         body,
-#         settings.DEFAULT_FROM_EMAIL,
-#         [cust_email]
-#         )   
+    send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [cust_email])
