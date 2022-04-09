@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
+from django.template.loader import render_to_string
 from django.conf import settings
 
 from .forms import ContactForm
@@ -14,7 +15,7 @@ def contact_view(request):
             email = form.cleaned_data.get('email') 
             subject = form.cleaned_data.get('subject') 
             message = form.cleaned_data.get('message') 
-            send_mail(subject, message, email, [settings.DEFAULT_FROM_EMAIL])
+            send_mail(subject, message, [settings.DEFAULT_FROM_EMAIL], [email])
             return render(request, 'contact/contact_success.html')
     form = ContactForm()
     context = {'form': form}
