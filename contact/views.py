@@ -15,7 +15,7 @@ def contact_view(request):
             email = form.cleaned_data.get('email') 
             subject = form.cleaned_data.get('subject') 
             message = form.cleaned_data.get('message') 
-            send_mail(subject, message, [settings.DEFAULT_FROM_EMAIL], [email])
+            send_mail(subject, message, [settings.DEFAULT_FROM_EMAIL], [email, settings.DEFAULT_FROM_EMAIL])
             return render(request, 'contact/contact_success.html')
     form = ContactForm()
     context = {'form': form}
