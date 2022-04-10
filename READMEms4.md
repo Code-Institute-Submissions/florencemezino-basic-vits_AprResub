@@ -242,10 +242,11 @@ Tou can fin the diagram of the project [here](https://drawsql.app/basic-vits/dia
 * User account
 - Register and sign in with social media account
 - Follow up : reminder to take the test again to assess possible new needs
--Customized recommendation as per health goal focus in profile
+- Customized recommendation as per health goal focus in profile
 - Receive monthly nutritive recipes ideas as per health goals set in profile account
 - Develop a calendar : reminders to take vitamins as per subcription
 - Import blood test result to generate a list of vitamins and supplements recommendations
+- User receives a email after submitting the contact form. Not only a notification on screen.
 
 *  User admin
 - Possibility to add, edit and delete products category, products health goal, products package, products subcription

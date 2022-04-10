@@ -40,7 +40,7 @@ Basic Vits Lighthouse - [Results](testing/lighthouse_basicvits_.png)
     - User can update quantity of the product before to add to cart
 
 3. Easily view the total of my purchase/personalized plan so that I can manage my vitamins and supplements budget.
-    - Every time the user add pa product to cart, user can see a notification in the top rioght corner of the screen
+    - Every time the user add a product to cart, user can see a notification in the top right corner of the screen
 
 * Register and have an account:
 4. Easily register for an account so that I can have benefits such as discount on products.
@@ -70,6 +70,8 @@ Basic Vits Lighthouse - [Results](testing/lighthouse_basicvits_.png)
 10. View items in my bag to be purchased so I identify the total cost of my purchase and all vitamins items I will receive
     - User can see content of the bag thanks to notification pop up 
     - User can see the content of their bag and more details about their order just before to check out
+    - User can update the content of their bag by increasing or decreasing the quantity
+    - User can remove a product fron the bag
 
 11. Easily enter payment information so that I can check out quickly and with no hassles
     - Stripe payment is available for user to make a safe and secure purchase
@@ -96,10 +98,13 @@ Basic Vits Lighthouse - [Results](testing/lighthouse_basicvits_.png)
 16. Receive an email notification after checking out so that I know that my order went through
     - After submitting the registration form , user receives a notification on screen advising to check their email
     - User sees a loading page while payment is processed to guarantee the safety of the payment checkout
+    - Order is saved within profile under order summary
 
 17. Have the possibility to contact a team of profesionnals (customer service or nutritionnist) so that I can adress potential issues with my order
     - User has access to an extensive FAQ  that adress their main inquiries to prevent customer inbound
     - User has access to a contact form to contact the `Basic Vits` Team
+    - User is notified on screen that a message was sent to the team.
+    - `Basic Vits` Team receive an email with the content of the request
 
 
 ### As a frequent `Basic Vits` shopper, I want to :
