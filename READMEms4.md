@@ -80,7 +80,7 @@ d. ultimate goal
 * Register and have an account:
 4. Easily register for an account so that I can have benefits such as discount on products.
 5. Easily and safely log in and out so that I can access my personal account information in a secure way.
-7. Have a personalized user profile so that I can view my reviews and order confirmations.
+7. Have a personalized user profile so that I can view my order confirmations.
 
 * Filter and search
 6. Filter the list of available products in a personalized way so that I can have a list of product suggestions that matches my needs
@@ -105,28 +105,25 @@ d. ultimate goal
 16. Receive an email notification after checking out so that I know that my order went through
 17. Have the possibility to contact a team of profesionnals (customer service or nutritionnist) so that I can adress potential issues with my order
 
-* Review product detail
-18. Give my opinion about a certain product and other people review so that I feel reassured about the products that I buy
-
 
 ### As a frequent `Basic Vits` shopper, I want to :
 
 * User Accounts / Purchasing and Check out
-19. Make use of my account to access easily my previous orders so that I can buy a refill of vitamins and supplements in few steps
+18. Make use of my account to access easily my previous orders so that I can buy a refill of vitamins and supplements in few steps
 
 * Sorting and Searching
-20. Have the possibility to assess my vitamins and supplements needs so that I can see if my needs changed and if I need to order different products
+19. Have the possibility to assess my vitamins and supplements needs so that I can see if my needs changed and if I need to order different products
 
  
 ### As a `Basic Vits` admin site user, I want to :
 
 * User Accounts
-21. Easily log in and out from a product management page so that I can access the `Basic Vits` product database and work with it efficiently
+20. Easily log in and out from a product management page so that I can access the `Basic Vits` product database and work with it efficiently
 
 - Admin and Store Management
-22. Add a product so that I can add new items to my online store
-23. Edit/Update a product so that I can change product prices, descriptions, images, amd other product crieria
-24. Delete a product so that I can remove items that are no longer for sales / out of stock
+21. Add a product so that I can add new items to my online store
+22. Edit/Update a product so that I can change product prices, descriptions, images, amd other product crieria
+23. Delete a product so that I can remove items that are no longer for sales / out of stock
 
 
 The user stories mentionned above covers the following features :
@@ -134,7 +131,6 @@ The user stories mentionned above covers the following features :
 - Registration and User Accounts
 - Sorting and Searching
 - Purchasing and Check out
-- Review
 - Contact
 - Admin and Store Management
 
@@ -212,7 +208,7 @@ Tou can fin the diagram of the project [here](https://drawsql.app/basic-vits/dia
     - By category : `Vitamins`, `Minerals`,`Plants`,`Specialties`,`Accessories/Merch`
     - By package: `Summer`, `Spring`, `Autumn`, `Winter`
     - By health goal : `Immunity`, `Brain`, `Energy`, `Eyes`, `Sleep`, `Stress`, `Heart`, `Joints`, `Skin`, `Hair`, `Digestion`, `Bones`, `Shape`
-    - Product details  + Leave a review
+    - Product details
 
 3. `Take the test` :
     - form to filter the shop and get personalized products recommendations for user. 
@@ -227,7 +223,6 @@ Tou can fin the diagram of the project [here](https://drawsql.app/basic-vits/dia
     - Sign out
     - User Profile
         - User info 
-        - Reviews history
         - Order history
 
 6. `Admin Profile`
@@ -398,7 +393,6 @@ Note : In order to set products on Basic Vits site, example of fixtures were cre
 - Build a Contact Form for a Python Django Application with Twilio SendGrid [view](https://www.twilio.com/blog/build-contact-form-python-django-twilio-sendgrid)
 - DevLabs: Tips on Debugging Errors [view](https://youtu.be/cdo9NfKVHWw)
 - Bootstrap snippet. bs4 how it works page [view](https://www.bootdey.com/snippets/view/bs4-how-it-works-page#html)
-- Bootstrap snippet. bs4 Ratings and Reviews page [view](https://www.bootdey.com/snippets/view/bs4-Ratings-and-Reviews-page#html)
 - Typefom [view](https://admin.typeform.com/form/tHZkFFBU/create?block=01FV0JRD39249A4AT0DMS9BRVD)
 - Typeform Django integration [view](https://pypi.org/project/django-typeform/)
 - How to Create a Quiz Web Application with Python Django [view](https://data-flair.training/blogs/create-quiz-application-python-django/)
