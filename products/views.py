@@ -27,7 +27,7 @@ def all_products(request):
             healthgoals = request.GET['healthgoal'].split(',')
             products = products.filter(healthgoal__name__in=healthgoals)
             healthgoals = HealthGoal.objects.filter(name__in=healthgoals)
-            
+
         if 'package' in request.GET:
             packages = request.GET['package'].split(',')
             products = products.filter(package__name__in=packages)
@@ -81,7 +81,7 @@ def add_product(request):
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -125,7 +125,7 @@ def delete_product(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-        
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
