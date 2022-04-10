@@ -6,9 +6,9 @@ View the live project [here](https://basic-vits.herokuapp.com/)
 ## Testing 
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+To validate Jinja code we use the webpage url or via the direct source code validation.
 
 W3C Markup Validator  / Jinja - `Success` 
-> to validate Jinja code is to open up a webpage in your app, right click the page, click view source, and copy that code into the W3 HTML validator.
 
 W3C CSS Validator - `Success`
 JShint - `Success`

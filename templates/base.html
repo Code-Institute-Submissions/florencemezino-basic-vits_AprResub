@@ -60,7 +60,7 @@
                             <a href="https://0xljnku64g4.typeform.com/to/TKb0ptMs" class="test-now-button btn-sm text-uppercase py-3" target="_blank">Take the Test</a>
                         <li class="list-inline-item">
                     {% endif %} 
-                        <a class="nav-link" href="{% url 'products' %}" id="user-options" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="{% url 'products' %}" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <p class="my-0"> [ Shop ]</p>
                             </div>
@@ -76,18 +76,17 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item">
-                        <a class="nav-link" href="{% url 'contact_view' %}" id="user-options" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="{% url 'contact_view' %}" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-question fa-lg"></i></div>
                                      <p class="my-0">
                                         Help Center
                                     </p>
-                                </p>
                             </div>
                         </a>
                     </li>
                     <li class="list-inline-item dropdown">
-                        <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">
@@ -99,7 +98,7 @@
                                 </p>
                             </div>
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <div class="dropdown-menu border-0">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
                                     <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
@@ -123,7 +122,6 @@
                                             €0.00
                                         {% endif %}
                                     </p>
-                                </p>
                             </div>
                         </a>
                     </li>
@@ -138,7 +136,6 @@
                 {% include 'includes/mobile-top-header.html' %}
             </nav>
         </div>
-    </div>
     </nav>
    <!--/.Navigation bar -->
 
@@ -169,43 +166,43 @@
 
     <!-- Footer -->
     <div class="container-fluid footer-margin-top">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer-background">
-        <div class="col-md-4">
-            <span class="footer-background">This product and service is not intended to diagnose, treat, cure or prevent any disease.
-                If you are sick, talk to your doctor</span>
-        </div>
-        <div class="col-md-4 d-flex">
-            <span class="copyright-text">&copy; 2022 Basic Vits, Inc - All rights reserved</span>
-        </div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer-background">
+            <div class="col-md-4">
+                <span class="footer-background">This product and service is not intended to diagnose, treat, cure or prevent any disease.
+                    If you are sick, talk to your doctor</span>
+            </div>
+            <div class="col-md-4 d-flex">
+                <span class="copyright-text">&copy; 2022 Basic Vits, Inc - All rights reserved</span>
+            </div>
 
-        <div class="col-md-2 d-flex align-items-center">
-            <ul class="list-inline social-links">
-                <li class="list-inline-item">
-                <a target="_blank" href="https://www.facebook.com/">
-                    <i class="fab fa-facebook fa-2x social-icon" aria-hidden="true"></i>
-                    <span class="sr-only">Facebook</span>
-                </a>
-                </li>
-                <li class="list-inline-item">
-                <a target="_blank" href="https://twitter.com/">
-                    <i class="fab fa-twitter fa-2x social-icon" aria-hidden="true"></i>
-                    <span class="sr-only">Twitter</span>
-                </a>
-                </li>
-                <li class="list-inline-item">
-                <a target="_blank" href="https://www.instagram.com/">
-                    <i class="fab fa-instagram fa-2x social-icon" aria-hidden="true"></i>
-                    <span class="sr-only">Instagram</span>
-                </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-    <div>
+            <div class="col-md-2 d-flex align-items-center">
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                    <a target="_blank" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook fa-2x social-icon" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    </li>
+                    <li class="list-inline-item">
+                    <a target="_blank" href="https://twitter.com/">
+                        <i class="fab fa-twitter fa-2x social-icon" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                    </li>
+                    <li class="list-inline-item">
+                    <a target="_blank" href="https://www.instagram.com/">
+                        <i class="fab fa-instagram fa-2x social-icon" aria-hidden="true"></i>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
    <!-- Footer -->
 
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
     {% endblock %}
