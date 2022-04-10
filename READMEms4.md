@@ -62,8 +62,7 @@ d. ultimate goal
 
 ## Business and developer goals
 
-- `Basic Vits` inc. company want to make vitamins and supplements accessible to anyone who wish to improve their health continuously. It offers a service in which users can have a customized plan. 
-- `Basic Vits` inc. company business model is to resell vitamins and supplements to end user as a monthly personalized subscription.
+- `Basic Vits` inc. company wants to make vitamins and supplements accessible to anyone who wishes to improve their health continuously. It offers a service in which users can have a customized plan.
 
 - As a developer, I want to gain profesionnal experience in developping an ecommerce website using Python+Django
 - As a developer, I want to add a functionnal full stack e-commerce website to my developer's portfolio
@@ -211,7 +210,7 @@ Tou can fin the diagram of the project [here](https://drawsql.app/basic-vits/dia
     - Product details
 
 3. `Take the test` :
-    - form to filter the shop and get personalized products recommendations for user. 
+    - quiz to get personalized products recommendations for user. 
 
 4. `Bag`(account required):
     - Order confirmation / checkout
@@ -417,7 +416,6 @@ Note : In order to set products on Basic Vits site, example of fixtures were cre
 * Mentor Session 1: Project Planning 
 - Use DrawSQL to wireframe data structure [view](https://drawsql.app/)
 - How to use sessions[here](https://docs.djangoproject.com/en/dev/topics/http/sessions/)
-- Subscription model, investigate automatic monthly payment from stripe
 - Make sure any products update doesn't affect order confirmations history from user profile
 
 * Project inception 
@@ -438,10 +436,8 @@ Note : In order to set products on Basic Vits site, example of fixtures were cre
 
 ### Author
 
-Basic Vits is a full stack site based around business logic used to control a centrally-owned dataset and was developped by Florence Mezino, student at Code Institute for the Full Stack Software Development (March 2021 - March 2022). See Github
+Basic Vits is a full stack site based around business logic used to control a centrally-owned dataset and was developped by Florence Mezino, student at Code Institute for the Full Stack Software Development (March 2021 - March 2022). 
 
 ### Got Feedback ?
 
 If you have any feedback, please reach out to the developper of the this project Florence Mezino at florence.mezino@outlook.com Thank you!
-
-
