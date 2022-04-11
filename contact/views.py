@@ -22,7 +22,7 @@ def contact_view(request):
             email_message = render_to_string(
                 'contact/customer_emails/customer_email_body.txt', {
                     'contact_email': settings.DEFAULT_FROM_EMAIL})
-            send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [email, settings.DEFAULT_FROM_EMAIL])
+            send_mail(email_subject, email_message, settings.DEFAULT_FROM_EMAIL, [email, settings.DEFAULT_FROM_EMAIL])
             return render(request, 'contact/contact_success.html')
     form = ContactForm()
     context = {'form': form}
