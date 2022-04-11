@@ -1,10 +1,10 @@
-Hello {{ contact.full_name }}!
+Hello {{ full_name }}!
 
 This is a confirmation that we have well received your message as per below :
 
-Name : {{ contact.full_name }}
-Email : {{ contact.email }}
-Message: {{ contact.message }}
+Name : {{ full_name }}
+Email : {{ email }}
+Message: {{ message }}
 
 If your request is related to a specific order or your vitamins subcription, please kindly reply to this email with your order number so we can assist your further.
 
